@@ -30,7 +30,6 @@ def shell(title, desc, body, prefix="", active=""):
     <a class="logo" href="{prefix}index.html">Sandhill<span>&nbsp;HQ</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="{prefix}services.html"{cls('services')}>Services</a>
-      <a href="{prefix}who-we-help.html"{cls('who')}>Who We Help</a>
       <a href="{prefix}about.html"{cls('about')}>About Us</a>
       <a href="{prefix}blog.html"{cls('blog')}>Insights</a>
     </nav>
@@ -56,7 +55,7 @@ def shell(title, desc, body, prefix="", active=""):
       <div>
         <h4>Company</h4>
         <a href="{prefix}about.html">About Us</a>
-        <a href="{prefix}who-we-help.html">Who We Help</a>
+        <a href="{prefix}faq.html">FAQ</a>
         <a href="{prefix}blog.html">Insights</a>
       </div>
       <div>
@@ -360,14 +359,14 @@ pages["services.html"] = dict(
 """)
 
 # ---------------- WHO WE HELP ----------------
-pages["who-we-help.html"] = dict(
-    title="Who We Help | Sandhill HQ",
+pages["faq.html"] = dict(
+    title="FAQ | Sandhill HQ",
     desc="Sandhill HQ works with SaaS companies, tech startups, professional service firms, and founder-led businesses. Answers to common questions about outsourced accounting.",
     active="who",
     body="""
 <section class="page-hero">
   <div class="wrap">
-    <span class="eyebrow">Who we help</span>
+    <span class="eyebrow">FAQ</span>
     <h1><em>Questions?</em> We're glad you asked.</h1>
     <p>We work with startups, SaaS companies, professional service firms, and growing businesses that need reliable accounting, financial reporting, and strategic financial oversight.</p>
   </div>
