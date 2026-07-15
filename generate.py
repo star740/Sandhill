@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
+import time
+VERSION = str(int(time.time()))
 """Generates all Sandhill HQ pages with a shared shell. Run from repo root."""
-import os
+import os, time
+V = str(int(time.time()))
 
 CAL = "https://calendar.app.google/ngdhcYuakQkRgjyx5"
 
 def shell(title, desc, body, prefix="", active=""):
+    V = VERSION
     def cls(name):
         return ' class="active"' if name == active else ""
     return f"""<!DOCTYPE html>
@@ -17,7 +21,7 @@ def shell(title, desc, body, prefix="", active=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{prefix}style.css">
+<link rel="stylesheet" href="{prefix}style.css?v={V}">
 </head>
 <body>
 
@@ -426,7 +430,7 @@ pages["about.html"] = dict(
       <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(250,247,241,.8)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
     </div>
     <figure class="team-photo team-photo-side reveal">
-      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1100" height="1650" loading="lazy">
+      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="930" loading="lazy">
       <figcaption>The Sandhill HQ team &mdash; Star, Founder &amp; Outsourced Controller (center).</figcaption>
     </figure>
   </div>

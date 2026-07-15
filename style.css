@@ -167,21 +167,21 @@ header{
 .faq-list details p{margin-top:14px;color:rgba(21,27,43,.78);font-size:15.5px}
 
 /* ABOUT */
-.founder-grid{display:grid;grid-template-columns:300px 1fr;gap:36px;align-items:start}
-.founder-photo{max-width:300px}
+.founder-grid{display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:start}
+.founder-photo{max-width:240px}
 @media(max-width:900px){
   .founder-grid{grid-template-columns:1fr}
-  .founder-photo{max-width:280px}
+  .founder-photo{max-width:240px}
 }
 .strip-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
-.team-photo-side{max-width:300px;justify-self:end}
+.team-photo-side{max-width:340px;justify-self:end}
 .team-photo-side figcaption{color:rgba(250,247,241,.7)}
 @media(max-width:900px){
   .strip-grid{grid-template-columns:1fr}
   .team-photo-side{max-width:280px;justify-self:start}
 }
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}
-.team-photo img{border-radius:var(--radius);border:1px solid var(--line);width:100%}
+.team-photo img{border-radius:var(--radius);border:1px solid var(--line);width:100%;height:auto}
 .team-photo figcaption{font-size:13.5px;color:rgba(21,27,43,.6);margin-top:12px;line-height:1.5}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr}}
 .founder{
