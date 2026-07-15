@@ -33,7 +33,7 @@ def shell(title, desc, body, prefix="", active=""):
       <a href="{prefix}about.html"{cls('about')}>About Us</a>
       <a href="{prefix}blog.html"{cls('blog')}>Insights</a>
     </nav>
-    <a class="btn btn-primary" href="{CAL}">Schedule a call</a>
+    <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
   </div>
 </header>
@@ -42,7 +42,7 @@ def shell(title, desc, body, prefix="", active=""):
 
 <section class="cta">
   <h2 class="reveal">Supporting your growth today, preparing you for <em>tomorrow</em></h2>
-  <a class="btn btn-sand reveal" href="{CAL}">Schedule a call</a>
+  <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
 </section>
 
 <footer>
@@ -66,7 +66,7 @@ def shell(title, desc, body, prefix="", active=""):
       </div>
       <div>
         <h4>Contact</h4>
-        <a href="{CAL}">Book a call</a>
+        <a href="{CAL}" target="_blank" rel="noopener">Book a call</a>
         <a href="mailto:info@sandhillhq.com">info@sandhillhq.com</a>
         <a href="{prefix}contact.html">Contact us</a>
       </div>
@@ -103,7 +103,7 @@ pages["index.html"] = dict(
     <h1>Your scalable accounting<br class="br-lg"> &amp;&nbsp;finance <em>department</em></h1>
     <p>From bookkeeping and monthly close to compliance, investor reporting, and strategic guidance &mdash; we become your complete finance team.</p>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="{CAL}">Schedule a call</a>
+      <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
       <a class="btn btn-ghost" href="services.html">Explore our services</a>
     </div>
   </div>
@@ -204,7 +204,7 @@ pages["index.html"] = dict(
       </div>
     </div>
     <div class="reveal" style="text-align:center">
-      <a class="btn btn-primary" href="{CAL}">Schedule a call</a>
+      <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
     </div>
   </div>
 </section>
@@ -353,7 +353,7 @@ pages["services.html"] = dict(
 <section class="strip">
   <div class="wrap" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
     <h2 class="reveal" style="max-width:22ch">Not sure which level of support you <em>need</em>?</h2>
-    <a class="btn btn-sand reveal" href="{CAL}">Schedule a call</a>
+    <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
   </div>
 </section>
 """)
@@ -511,7 +511,7 @@ pages["contact.html"] = dict(
       <div class="contact-card reveal">
         <h3>Schedule a call</h3>
         <p>Pick a time that works for you and we'll talk through your current setup, your goals, and whether we're the right fit. No pressure, no obligation.</p>
-        <a class="btn btn-primary" href="{CAL}">Book a time &rarr;</a>
+        <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Book a time &rarr;</a>
         <p style="margin:22px 0 0">Prefer email? Write to us at <a href="mailto:info@sandhillhq.com" style="color:var(--navy);font-weight:600;text-decoration:underline">info@sandhillhq.com</a></p>
       </div>
       <div class="contact-card reveal">
