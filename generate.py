@@ -430,7 +430,7 @@ pages["about.html"] = dict(
       <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
     </div>
     <figure class="team-photo team-photo-side reveal">
-      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="760" loading="lazy">
+      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="854" loading="lazy">
       <figcaption>The Sandhill HQ Team</figcaption>
     </figure>
   </div>
