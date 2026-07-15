@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Not Found | Sandhill HQ</title>
+<meta name="description" content="The page you're looking for doesn't exist.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Sandhill<span>&nbsp;HQ</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="services.html">Services</a>
+      <a href="who-we-help.html">Who We Help</a>
+      <a href="about.html">About Us</a>
+      <a href="blog.html">Insights</a>
+    </nav>
+    <a class="btn btn-primary" href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Schedule a call</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+
+<section class="page-hero" style="padding:140px 0 120px;text-align:center">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center">404</span>
+    <h1 style="margin:0 auto">This page doesn't <em>reconcile</em></h1>
+    <p style="margin:24px auto 36px">The page you're looking for doesn't exist or has moved. Let's get you back on the books.</p>
+    <a class="btn btn-primary" href="/Sandhill/">Back to home</a>
+  </div>
+</section>
+
+
+<section class="cta">
+  <h2 class="reveal">Supporting your growth today, preparing you for <em>tomorrow</em></h2>
+  <a class="btn btn-sand reveal" href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Schedule a call</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Sandhill<span>&nbsp;HQ</span></a>
+        <p style="font-size:14px;color:rgba(21,34,25,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="who-we-help.html">Who We Help</a>
+        <a href="blog.html">Insights</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="services.html#bookkeeping">Bookkeeping &amp; Operations</a>
+        <a href="services.html#accounting">Accounting &amp; Reporting</a>
+        <a href="services.html#controller">Controller Services</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Book a call</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>&copy; 2026 Sandhill HQ. All rights reserved.</span>
+      <span><a href="legal.html">Legal</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Sandhill HQ</title>
+<meta name="description" content="Sandhill was founded to give growing companies the expertise, structure, and financial oversight they need — without the cost and complexity of an internal accounting department.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Sandhill<span>&nbsp;HQ</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="services.html">Services</a>
+      <a href="who-we-help.html">Who We Help</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="blog.html">Insights</a>
+    </nav>
+    <a class="btn btn-primary" href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Schedule a call</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">About us</span>
+    <h1>Financial expertise built for <em>growing</em> businesses</h1>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--sand)">Who we are</span>
+    <p class="statement reveal">As businesses grow, so do the demands on their accounting function. Sandhill was founded to provide companies with the expertise, structure, and financial oversight they need, without the cost and complexity of building an internal accounting department.</p>
+    <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(250,247,241,.8)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">From the founder</span>
+      <h2>Why Sandhill <em>exists</em></h2>
+    </div>
+    <div class="founder reveal">
+      <p>After years supporting the accounting for growing businesses at a CPA firm and then in corporate finance, I saw firsthand the back-office challenges companies face as they scale. Many had outgrown basic bookkeeping but weren't ready for a full internal finance team. Sandhill was built to bridge that gap by providing experienced accounting professionals who become an extension of each client's business.</p>
+      <p>That's why I founded Sandhill.</p>
+      <p>Today, I work closely with every client to ensure they receive not only accurate accounting, but a trusted partner who understands their business and is invested in their long-term success.</p>
+      <p class="sig">&mdash; Star, Founder &amp; Outsourced Controller</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta">
+  <h2 class="reveal">Supporting your growth today, preparing you for <em>tomorrow</em></h2>
+  <a class="btn btn-sand reveal" href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Schedule a call</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html">Sandhill<span>&nbsp;HQ</span></a>
+        <p style="font-size:14px;color:rgba(21,34,25,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="who-we-help.html">Who We Help</a>
+        <a href="blog.html">Insights</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="services.html#bookkeeping">Bookkeeping &amp; Operations</a>
+        <a href="services.html#accounting">Accounting &amp; Reporting</a>
+        <a href="services.html#controller">Controller Services</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://calendar.app.google/ngdhcYuakQkRgjyx5">Book a call</a>
+        <a href="contact.html">Contact us</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>&copy; 2026 Sandhill HQ. All rights reserved.</span>
+      <span><a href="legal.html">Legal</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
