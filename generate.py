@@ -216,18 +216,18 @@ pages["index.html"] = dict(
       <h2>Certified <em>experts</em> in the finance tools that power modern businesses</h2>
     </div>
     <div class="tools-grid reveal">
-      <div class="tool">QuickBooks<small>Online</small></div>
-      <div class="tool">NetSuite<small>Oracle</small></div>
-      <div class="tool">Xero<small>Accounting</small></div>
-      <div class="tool">Sage Intacct<small>Cloud ERP</small></div>
-      <div class="tool">Brex<small>Spend</small></div>
-      <div class="tool">Ramp<small>Spend</small></div>
-      <div class="tool">BILL<small>AP / AR</small></div>
-      <div class="tool">Gusto<small>Payroll</small></div>
-      <div class="tool">Zoho<small>Suite</small></div>
-      <div class="tool">Expensify<small>Expenses</small></div>
-      <div class="tool">ADP<small>Payroll</small></div>
-      <div class="tool">TriNet<small>PEO / HR</small></div>
+      <div class="tool"><img src="assets/logos/quickbooks.svg" alt="QuickBooks logo" loading="lazy"><small>QuickBooks</small></div>
+      <div class="tool"><span class="wordmark">NetSuite</span><small>Oracle NetSuite</small></div>
+      <div class="tool"><img src="assets/logos/xero.svg" alt="Xero logo" loading="lazy"><small>Xero</small></div>
+      <div class="tool"><img src="assets/logos/sage.svg" alt="Sage logo" loading="lazy"><small>Sage Intacct</small></div>
+      <div class="tool"><img src="assets/logos/brex.svg" alt="Brex logo" loading="lazy"><small>Brex</small></div>
+      <div class="tool"><span class="wordmark">ramp</span><small>Ramp</small></div>
+      <div class="tool"><span class="wordmark">BILL</span><small>BILL</small></div>
+      <div class="tool"><img src="assets/logos/gusto.svg" alt="Gusto logo" loading="lazy"><small>Gusto</small></div>
+      <div class="tool"><img src="assets/logos/zoho.svg" alt="Zoho logo" loading="lazy"><small>Zoho</small></div>
+      <div class="tool"><img src="assets/logos/expensify.svg" alt="Expensify logo" loading="lazy"><small>Expensify</small></div>
+      <div class="tool"><img src="assets/logos/adp.svg" alt="ADP logo" loading="lazy"><small>ADP</small></div>
+      <div class="tool"><span class="wordmark">TriNet</span><small>TriNet</small></div>
     </div>
   </div>
 </section>

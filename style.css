@@ -117,9 +117,14 @@ header{
 .tools-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
 .tool{
   background:#fff;border:1px solid var(--line);border-radius:10px;
-  padding:20px 10px;text-align:center;font-weight:600;font-size:14px;color:var(--navy);
+  padding:22px 10px 16px;text-align:center;font-weight:600;font-size:14px;color:var(--navy);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  min-height:104px;transition:transform .15s ease;
 }
-.tool small{display:block;font-weight:400;font-size:11px;color:rgba(21,27,43,.5);margin-top:2px}
+.tool:hover{transform:translateY(-2px)}
+.tool img{height:34px;width:auto;opacity:.9}
+.tool .wordmark{font-weight:700;font-size:19px;letter-spacing:-.01em;color:var(--navy);line-height:34px}
+.tool small{display:block;font-weight:500;font-size:11px;color:rgba(21,27,43,.55)}
 
 /* BLOG CARDS */
 .posts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
