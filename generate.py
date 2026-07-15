@@ -419,10 +419,16 @@ pages["about.html"] = dict(
 </section>
 
 <section class="strip">
-  <div class="wrap">
-    <span class="eyebrow" style="color:var(--sand)">Who we are</span>
-    <p class="statement reveal">As businesses grow, so do the demands on their accounting function. Sandhill was founded to provide companies with the expertise, structure, and financial oversight they need, without the cost and complexity of building an internal accounting department.</p>
-    <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(250,247,241,.8)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
+  <div class="wrap strip-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--sand)">Who we are</span>
+      <p class="statement reveal">As businesses grow, so do the demands on their accounting function. Sandhill was founded to provide companies with the expertise, structure, and financial oversight they need, without the cost and complexity of building an internal accounting department.</p>
+      <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(250,247,241,.8)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
+    </div>
+    <figure class="team-photo team-photo-side reveal">
+      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1100" height="1650" loading="lazy">
+      <figcaption>The Sandhill HQ team &mdash; Star, Founder &amp; Outsourced Controller (center).</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -432,17 +438,11 @@ pages["about.html"] = dict(
       <span class="eyebrow">From the founder</span>
       <h2>Why Sandhill <em>exists</em></h2>
     </div>
-    <div class="about-grid">
-    <figure class="team-photo reveal">
-      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1100" height="1650" loading="lazy">
-      <figcaption>The Sandhill HQ team &mdash; Star, Founder &amp; Outsourced Controller (center).</figcaption>
-    </figure>
     <div class="founder reveal">
       <p>After years supporting the accounting for growing businesses at a CPA firm and then in corporate finance, I saw firsthand the back-office challenges companies face as they scale. Many had outgrown basic bookkeeping but weren't ready for a full internal finance team. Sandhill was built to bridge that gap by providing experienced accounting professionals who become an extension of each client's business.</p>
       <p>That's why I founded Sandhill.</p>
       <p>Today, I work closely with every client to ensure they receive not only accurate accounting, but a trusted partner who understands their business and is invested in their long-term success.</p>
       <p class="sig">&mdash; Star, Founder &amp; Outsourced Controller</p>
-    </div>
     </div>
   </div>
 </section>
