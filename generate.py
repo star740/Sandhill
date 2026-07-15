@@ -417,7 +417,7 @@ pages["about.html"] = dict(
 <section class="page-hero center">
   <div class="wrap">
     <span class="eyebrow">About us</span>
-    <h1>The people behind your <em>numbers</em></h1>
+    <h1>Meet your accounting &amp; finance <em>department</em></h1>
   </div>
 </section>
 
