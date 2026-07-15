@@ -47,7 +47,7 @@ def shell(title, desc, body, prefix="", active=""):
     <div class="foot-grid">
       <div>
         <a class="logo" href="{prefix}index.html">Sandhill<span>&nbsp;HQ</span></a>
-        <p style="font-size:14px;color:rgba(21,34,25,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
+        <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
         <h4>Company</h4>
@@ -64,6 +64,7 @@ def shell(title, desc, body, prefix="", active=""):
       <div>
         <h4>Contact</h4>
         <a href="{CAL}">Book a call</a>
+        <a href="mailto:info@sandhillhq.com">info@sandhillhq.com</a>
         <a href="{prefix}contact.html">Contact us</a>
       </div>
     </div>
@@ -106,7 +107,7 @@ pages["index.html"] = dict(
   <svg class="dunes" viewBox="0 0 640 320" fill="none" aria-hidden="true">
     <path d="M0 320 C120 220 260 260 380 200 C480 150 560 170 640 120 L640 320 Z" fill="#EDE3D2"/>
     <path d="M0 320 C160 260 300 300 430 250 C530 212 590 225 640 195 L640 320 Z" fill="#C99B5F" opacity=".35"/>
-    <path d="M0 320 C180 290 340 315 640 260 L640 320 Z" fill="#1C4434" opacity=".18"/>
+    <path d="M0 320 C180 290 340 315 640 260 L640 320 Z" fill="#1E2B4F" opacity=".18"/>
   </svg>
 </section>
 
@@ -502,6 +503,7 @@ pages["contact.html"] = dict(
         <h3>Schedule a call</h3>
         <p>Pick a time that works for you and we'll talk through your current setup, your goals, and whether we're the right fit. No pressure, no obligation.</p>
         <a class="btn btn-primary" href="{CAL}">Book a time &rarr;</a>
+        <p style="margin:22px 0 0">Prefer email? Write to us at <a href="mailto:info@sandhillhq.com" style="color:var(--navy);font-weight:600;text-decoration:underline">info@sandhillhq.com</a></p>
       </div>
       <div class="contact-card reveal">
         <h3>What to expect</h3>
