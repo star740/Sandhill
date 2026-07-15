@@ -414,10 +414,10 @@ pages["about.html"] = dict(
     desc="Sandhill was founded to give growing companies the expertise, structure, and financial oversight they need — without the cost and complexity of an internal accounting department.",
     active="about",
     body="""
-<section class="page-hero">
+<section class="page-hero center">
   <div class="wrap">
     <span class="eyebrow">About us</span>
-    <h1>Financial expertise built for <em>growing</em> businesses</h1>
+    <h1>The people behind your <em>numbers</em></h1>
   </div>
 </section>
 
