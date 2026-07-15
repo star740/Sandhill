@@ -173,12 +173,14 @@ header{
   .founder-grid{grid-template-columns:1fr}
   .founder-photo{max-width:240px}
 }
-.strip-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
-.team-photo-side{max-width:340px;justify-self:end}
-.team-photo-side figcaption{color:rgba(250,247,241,.7)}
+.strip-light{background:var(--sand-soft);color:var(--ink)}
+.strip-light .statement{color:var(--ink)}
+.strip-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.team-photo-side{max-width:480px;justify-self:end}
+.team-photo-side figcaption{color:rgba(21,27,43,.6)}
 @media(max-width:900px){
   .strip-grid{grid-template-columns:1fr}
-  .team-photo-side{max-width:280px;justify-self:start}
+  .team-photo-side{max-width:100%;justify-self:start}
 }
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}
 .team-photo img{border-radius:var(--radius);border:1px solid var(--line);width:100%;height:auto}
