@@ -97,7 +97,7 @@ pages["index.html"] = dict(
     desc="Outsourced accounting for SaaS startups and growing businesses. Expert bookkeeping, GAAP financial reporting, ASC 606 revenue recognition, and controller services.",
     active="",
     body=f"""
-<section class="hero">
+<section class="hero hero-c">
   <div class="wrap">
     <span class="eyebrow">Outsourced accounting &amp; finance</span>
     <h1>Your scalable accounting<br class="br-lg"> &amp;&nbsp;finance <em>department</em></h1>
@@ -116,13 +116,13 @@ pages["index.html"] = dict(
 
 <section class="strip">
   <div class="wrap">
-    <h2 class="reveal">We work with SaaS companies, tech startups and founder-led businesses looking to <em>grow</em></h2>
+    <h2 class="reveal strip-c">We work with SaaS companies, tech startups and founder-led businesses looking to <em>grow</em></h2>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head center reveal">
       <span class="eyebrow">Why outsource</span>
       <h2>The <em>advantages</em> of an outsourced finance team</h2>
     </div>
@@ -148,7 +148,7 @@ pages["index.html"] = dict(
 
 <section class="section services-bg">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head center reveal">
       <span class="eyebrow">What we do</span>
       <h2>Finance as a <em>Service</em></h2>
     </div>
@@ -211,7 +211,7 @@ pages["index.html"] = dict(
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head center reveal">
       <span class="eyebrow">Software we know</span>
       <h2>Certified <em>experts</em> in the finance tools that power modern businesses</h2>
     </div>
@@ -234,7 +234,7 @@ pages["index.html"] = dict(
 
 <section class="section" style="padding-top:0">
   <div class="wrap">
-    <div class="section-head reveal">
+    <div class="section-head center reveal">
       <span class="eyebrow">Insights &amp; resources</span>
       <h2>From the Sandhill <em>desk</em></h2>
     </div>

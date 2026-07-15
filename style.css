@@ -221,6 +221,18 @@ footer{padding:64px 0 40px;border-top:1px solid var(--line)}
 .foot-grid a:hover{opacity:1}
 .foot-note{font-size:13px;color:rgba(21,27,43,.55);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-top:26px}
 
+
+/* CENTERED VARIANTS */
+.hero-c .wrap{text-align:center}
+.hero-c h1{margin-left:auto;margin-right:auto}
+.hero-c p{margin-left:auto;margin-right:auto}
+.hero-c .hero-actions{justify-content:center}
+.hero-c .eyebrow{justify-content:center}
+.hero-c .eyebrow::after{content:"";width:26px;height:1px;background:var(--sand)}
+.strip-c{margin-left:auto;margin-right:auto;text-align:center}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;max-width:680px}
+.section-head.center .eyebrow::after{content:"";width:26px;height:1px;background:var(--sand)}
+
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
