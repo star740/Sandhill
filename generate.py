@@ -431,7 +431,7 @@ pages["about.html"] = dict(
     </div>
     <figure class="team-photo team-photo-side reveal">
       <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="797" loading="lazy">
-      <figcaption>The Sandhill HQ team &mdash; Star, Founder &amp; Outsourced Controller (center).</figcaption>
+      <figcaption>The Sandhill HQ Team</figcaption>
     </figure>
   </div>
 </section>
