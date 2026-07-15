@@ -427,7 +427,7 @@ pages["about.html"] = dict(
     <div>
       <span class="eyebrow">Who we are</span>
       <p class="statement reveal">As businesses grow, so do the demands on their accounting function. Sandhill was founded to provide companies with the expertise, structure, and financial oversight they need, without the cost and complexity of building an internal accounting department.</p>
-      <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team combines day-to-day accounting, technical expertise, and controller-level oversight to deliver accurate financial reporting, scalable processes, and the confidence to make informed business decisions.</p>
+      <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team brings specialized expertise to every layer of the accounting function &mdash; from day-to-day bookkeeping to controller-level oversight.</p>
     </div>
     <figure class="team-photo team-photo-side reveal">
       <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="854" loading="lazy">
