@@ -167,6 +167,12 @@ header{
 .faq-list details p{margin-top:14px;color:rgba(21,27,43,.78);font-size:15.5px}
 
 /* ABOUT */
+.founder-grid{display:grid;grid-template-columns:300px 1fr;gap:36px;align-items:start}
+.founder-photo{max-width:300px}
+@media(max-width:900px){
+  .founder-grid{grid-template-columns:1fr}
+  .founder-photo{max-width:280px}
+}
 .strip-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
 .team-photo-side{max-width:300px;justify-self:end}
 .team-photo-side figcaption{color:rgba(250,247,241,.7)}
