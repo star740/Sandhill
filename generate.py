@@ -100,7 +100,7 @@ pages["index.html"] = dict(
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">Outsourced accounting &amp; finance</span>
-    <h1>Your scalable accounting &amp; finance <em>department</em></h1>
+    <h1>Your scalable accounting<br class="br-lg"> &amp;&nbsp;finance <em>department</em></h1>
     <p>From bookkeeping and monthly close to compliance, investor reporting, and strategic guidance &mdash; we become your complete finance team.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="{CAL}">Schedule a call</a>
