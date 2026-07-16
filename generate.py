@@ -155,7 +155,7 @@ pages["index.html"] = dict(
     <div class="pillars">
       <div class="pillar reveal">
         <div class="tag">01 &middot; Foundation</div>
-        <h3>Bookkeeping &amp; Financial Operations</h3>
+        <h3>Bookkeeping &amp; Operations</h3>
         <p>The day-to-day financial foundation that keeps your business running smoothly.</p>
         <ul>
           <li>Accounts Payable (AP)</li>
@@ -273,7 +273,7 @@ pages["services.html"] = dict(
     <div class="pillars">
       <div class="pillar reveal" id="bookkeeping">
         <div class="tag">01 &middot; Foundation</div>
-        <h3>Bookkeeping &amp; Financial Operations</h3>
+        <h3>Bookkeeping &amp; Operations</h3>
         <p>The day-to-day financial foundation that keeps your business running smoothly &mdash; every transaction captured, categorized, and reconciled, every vendor and bill handled on time.</p>
         <ul>
           <li>Accounts Payable (AP)</li>
