@@ -20,6 +20,7 @@ body{
 }
 h1,h2,h3{font-family:'Lora',Georgia,serif;font-weight:500;line-height:1.14;letter-spacing:-0.01em}
 em{font-style:italic;font-weight:400;color:var(--sand)}
+.strip em,.cta em,.post em{font-style:inherit;font-family:inherit;font-weight:inherit;color:inherit}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
