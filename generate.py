@@ -41,7 +41,7 @@ def shell(title, desc, body, prefix="", active=""):
 {body}
 
 <section class="cta">
-  <h2 class="reveal">Supporting your growth today, preparing you for <em>tomorrow</em></h2>
+  <h2 class="reveal">Supporting your growth today, preparing you for tomorrow</h2>
   <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
 </section>
 
@@ -116,7 +116,7 @@ pages["index.html"] = dict(
 
 <section class="strip">
   <div class="wrap">
-    <h2 class="reveal strip-c">We work with SaaS companies, tech startups and founder-led businesses looking to <em>grow</em></h2>
+    <h2 class="reveal strip-c">We work with SaaS companies, tech startups and founder-led businesses looking to grow</h2>
   </div>
 </section>
 
@@ -352,7 +352,7 @@ pages["services.html"] = dict(
 
 <section class="strip">
   <div class="wrap" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
-    <h2 class="reveal" style="max-width:22ch">Not sure which level of support you <em>need</em>?</h2>
+    <h2 class="reveal" style="max-width:22ch">Not sure which level of support you need?</h2>
     <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
   </div>
 </section>
