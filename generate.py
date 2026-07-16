@@ -101,7 +101,7 @@ pages["index.html"] = dict(
   <div class="wrap">
     <span class="eyebrow">Outsourced accounting &amp; finance</span>
     <h1>Your scalable accounting<br class="br-lg"> &amp;&nbsp;finance <em>department</em></h1>
-    <p>From bookkeeping and monthly close to compliance, investor reporting, and strategic guidance &mdash; we become your complete finance team.</p>
+    <p>From bookkeeping and monthly close to compliance, investor reporting, and strategic guidance, we become your complete finance team.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
       <a class="btn btn-ghost" href="services.html">Explore our services</a>
@@ -256,7 +256,7 @@ pages["index.html"] = dict(
 
 # ---------------- SERVICES ----------------
 pages["services.html"] = dict(
-    title="Services | Sandhill HQ — Outsourced Accounting & Finance",
+    title="Services | Sandhill HQ - Outsourced Accounting & Finance",
     desc="Bookkeeping and financial operations, GAAP accounting and reporting, and controller services for SaaS startups and growing businesses.",
     active="services",
     body=f"""
@@ -264,7 +264,7 @@ pages["services.html"] = dict(
   <div class="wrap">
     <span class="eyebrow">Our services</span>
     <h1>Finance as a <em>Service</em></h1>
-    <p>Three layers of support that work together as one finance function &mdash; from daily transactions to controller-level oversight. Engage the full stack or just the layer you need today, and scale as you grow.</p>
+    <p>Three layers of support that work together as one finance function, from daily transactions to controller-level oversight. Engage the full stack or just the layer you need today, and scale as you grow.</p>
   </div>
 </section>
 
@@ -274,7 +274,7 @@ pages["services.html"] = dict(
       <div class="pillar reveal" id="bookkeeping">
         <div class="tag">01 &middot; Foundation</div>
         <h3>Bookkeeping &amp; Operations</h3>
-        <p>The day-to-day financial foundation that keeps your business running smoothly &mdash; every transaction captured, categorized, and reconciled, every vendor and bill handled on time.</p>
+        <p>The day-to-day financial foundation that keeps your business running smoothly: every transaction captured, categorized, and reconciled, every vendor and bill handled on time.</p>
         <ul>
           <li>Accounts Payable (AP)</li>
           <li>Accounts Receivable (AR)</li>
@@ -290,7 +290,7 @@ pages["services.html"] = dict(
       <div class="pillar reveal" id="accounting">
         <div class="tag">02 &middot; Clarity</div>
         <h3>Accounting &amp; Reporting</h3>
-        <p>Accurate, GAAP-compliant financial reporting built to support growth and decision-making &mdash; and to hold up under investor, lender, and auditor scrutiny.</p>
+        <p>Accurate, GAAP-compliant financial reporting built to support growth and decision-making, built to hold up under investor, lender, and auditor scrutiny.</p>
         <ul>
           <li>Monthly Financial Statements</li>
           <li>Month-End Close</li>
@@ -307,7 +307,7 @@ pages["services.html"] = dict(
       <div class="pillar reveal" id="controller">
         <div class="tag">03 &middot; Oversight</div>
         <h3>Controller Services</h3>
-        <p>Financial oversight and process management designed to scale with your business &mdash; the controller-level judgment growing companies need without the full-time hire.</p>
+        <p>Financial oversight and process management designed to scale with your business: the controller-level judgment growing companies need without the full-time hire.</p>
         <ul>
           <li>Cash Flow Monitoring</li>
           <li>Budget vs. Actual Reporting</li>
@@ -334,7 +334,7 @@ pages["services.html"] = dict(
       <div class="step reveal">
         <div class="num">Step 01</div>
         <h3>Discovery &amp; Assessment</h3>
-        <p>We start with a call to understand your business, your current setup, and where the gaps are &mdash; then review your books and systems to scope the right level of support.</p>
+        <p>We start with a call to understand your business, your current setup, and where the gaps are, then review your books and systems to scope the right level of support.</p>
       </div>
       <div class="step reveal">
         <div class="num">Step 02</div>
@@ -411,7 +411,7 @@ pages["faq.html"] = dict(
 # ---------------- ABOUT ----------------
 pages["about.html"] = dict(
     title="About Us | Sandhill HQ",
-    desc="Sandhill was founded to give growing companies the expertise, structure, and financial oversight they need — without the cost and complexity of an internal accounting department.",
+    desc="Sandhill was founded to give growing companies the expertise, structure, and financial oversight they need, without the cost and complexity of an internal accounting department.",
     active="about",
     body="""
 <section class="page-hero center">
@@ -426,7 +426,7 @@ pages["about.html"] = dict(
     <div>
       <span class="eyebrow">Who we are</span>
       <p class="statement reveal">As businesses grow, so do the demands on their accounting function. Sandhill was founded to provide companies with the expertise, structure, and financial oversight they need, without the cost and complexity of building an internal accounting department.</p>
-      <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team brings specialized expertise to every layer of the accounting function &mdash; from day-to-day bookkeeping to controller-level oversight.</p>
+      <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team brings specialized expertise to every layer of the accounting function, from day-to-day bookkeeping to controller-level oversight.</p>
     </div>
     <figure class="team-photo team-photo-side reveal">
       <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="854" loading="lazy">
@@ -444,13 +444,13 @@ pages["about.html"] = dict(
     <div class="founder-grid">
     <figure class="team-photo founder-photo reveal">
       <img src="assets/founder.jpg" alt="Star, Founder and Outsourced Controller of Sandhill HQ" width="800" height="1200" loading="lazy">
-      <figcaption>Star &mdash; Founder &amp; Outsourced Controller</figcaption>
+      <figcaption>Star, Founder &amp; Outsourced Controller</figcaption>
     </figure>
     <div class="founder reveal">
       <p>After years supporting the accounting for growing businesses at a CPA firm and then in corporate finance, I saw firsthand the back-office challenges companies face as they scale. Many had outgrown basic bookkeeping but weren't ready for a full internal finance team. Sandhill was built to bridge that gap by providing experienced accounting professionals who become an extension of each client's business.</p>
       <p>That's why I founded Sandhill.</p>
       <p>Today, I work closely with every client to ensure they receive not only accurate accounting, but a trusted partner who understands their business and is invested in their long-term success.</p>
-      <p class="sig">&mdash; Star, Founder &amp; Outsourced Controller</p>
+      <p class="sig">Star, Founder &amp; Outsourced Controller</p>
     </div>
     </div>
   </div>
@@ -467,7 +467,7 @@ pages["blog.html"] = dict(
   <div class="wrap">
     <span class="eyebrow">Insights &amp; resources</span>
     <h1>From the Sandhill <em>desk</em></h1>
-    <p>Practical accounting and finance guidance for founders &mdash; written from the trenches, not the textbook.</p>
+    <p>Practical accounting and finance guidance for founders, written from the trenches, not the textbook.</p>
   </div>
 </section>
 
@@ -596,17 +596,17 @@ ASC = """
 
     <h2>Where It Gets Complicated for SaaS</h2>
     <h3>1. Bundled Offerings and Performance Obligations</h3>
-    <p>If your contract includes a subscription <em>plus</em> implementation services, onboarding, training, or professional services &mdash; you likely have multiple performance obligations. Each one needs to be identified separately, priced on a standalone basis (what you'd charge for it alone), and recognized on its own timeline.</p>
+    <p>If your contract includes a subscription <em>plus</em> implementation services, onboarding, training, or professional services, you likely have multiple performance obligations. Each one needs to be identified separately, priced on a standalone basis (what you'd charge for it alone), and recognized on its own timeline.</p>
     <p>Lumping it all together as one revenue stream is one of the most common errors we see, and it's exactly what auditors look for.</p>
     <h3>2. Annual vs. Monthly Contracts</h3>
-    <p>If a customer pays you $12,000 upfront for an annual subscription, you can't recognize all $12,000 on day one. That cash sits on your balance sheet as <strong>deferred revenue</strong> &mdash; a liability &mdash; and gets recognized ratably as you deliver the service each month ($1,000/month over 12 months).</p>
+    <p>If a customer pays you $12,000 upfront for an annual subscription, you can't recognize all $12,000 on day one. That cash sits on your balance sheet as <strong>deferred revenue</strong>, a liability, and gets recognized ratably as you deliver the service each month ($1,000/month over 12 months).</p>
     <p>This is why your cash flow and your revenue on the income statement can look dramatically different, and why investors who understand SaaS metrics pay close attention to deferred revenue trends.</p>
     <h3>3. Variable Consideration</h3>
-    <p>Usage-based pricing, volume discounts, credits, refunds, and performance bonuses all create variable consideration. Under ASC 606, you can only include variable amounts in your transaction price to the extent it's highly probable that a significant revenue reversal won't occur. This requires estimates and documentation &mdash; not guesswork.</p>
+    <p>Usage-based pricing, volume discounts, credits, refunds, and performance bonuses all create variable consideration. Under ASC 606, you can only include variable amounts in your transaction price to the extent it's highly probable that a significant revenue reversal won't occur. This requires estimates and documentation, not guesswork.</p>
     <h3>4. Contract Modifications</h3>
     <p>When a customer upgrades, downgrades, or adds seats mid-contract, you have a contract modification. The accounting treatment depends on whether the modification is effectively a new contract or a continuation of the old one. This is an area where getting it wrong is easy and the downstream effects on your financials can compound quickly.</p>
     <h3>5. Free Trials and Discounts</h3>
-    <p>Extended free trials or deeply discounted intro periods can create a material right &mdash; essentially an option the customer has to purchase future services at a discount. Material rights are their own performance obligation under ASC 606 and need to be accounted for accordingly.</p>
+    <p>Extended free trials or deeply discounted intro periods can create a material right: essentially an option the customer has to purchase future services at a discount. Material rights are their own performance obligation under ASC 606 and need to be accounted for accordingly.</p>
 
     <h2>The SaaS Metrics That Depend on Getting This Right</h2>
     <p>Your revenue recognition policy directly affects how your financials read to investors, lenders, and acquirers. If your ARR, MRR, and recognized revenue don't tell a coherent story, the credibility of your entire financial model comes into question.</p>
@@ -634,16 +634,16 @@ ASC = """
       <li>A <strong>written revenue recognition policy</strong> aligned to ASC 606</li>
       <li>A <strong>contract review process</strong> that flags non-standard terms before they create accounting complexity</li>
       <li>Clean separation of <strong>deferred revenue by cohort</strong> so you can track and project recognition schedules</li>
-      <li><strong>Reconciliation between your billing system and your books</strong> &mdash; every month, not just at audit time</li>
+      <li><strong>Reconciliation between your billing system and your books</strong>, every month, not just at audit time</li>
       <li>Documentation for any estimates (variable consideration, standalone selling prices, etc.)</li>
     </ul>
 
     <h2>A Note on Tools</h2>
-    <p>Revenue recognition automation tools (Maxio, Zuora Revenue, and others) can help as you scale &mdash; but they're not a substitute for understanding the underlying accounting. We've seen companies implement expensive tools on top of incorrect policies and end up with very elegant, very wrong financials.</p>
+    <p>Revenue recognition automation tools (Maxio, Zuora Revenue, and others) can help as you scale, but they're not a substitute for understanding the underlying accounting. We've seen companies implement expensive tools on top of incorrect policies and end up with very elegant, very wrong financials.</p>
     <p>Get the policy right first. Then automate it.</p>
 
     <h2>The Bottom Line</h2>
-    <p>ASC 606 exists because the old rules allowed too much discretion in timing revenue, and that discretion got abused. The current standard is more principles-based, which means it requires judgment &mdash; and documentation of that judgment.</p>
+    <p>ASC 606 exists because the old rules allowed too much discretion in timing revenue, and that discretion got abused. The current standard is more principles-based, which means it requires judgment, and documentation of that judgment.</p>
     <p>For SaaS founders, the goal isn't to become an expert in the standard. It's to understand enough to ask the right questions of your finance team, structure your contracts thoughtfully, and avoid the expensive surprises that come from treating revenue recognition as someone else's problem.</p>
     <p>It isn't. It's yours.</p>
     <div class="outro">Sandhill HQ helps SaaS companies build the financial infrastructure to grow with confidence. If you're approaching your first audit or preparing for a fundraise and want a second set of eyes on your revenue recognition setup we would love to help!</div>
@@ -671,30 +671,30 @@ CVA = """
 </div>
 <article class="article">
   <div class="wrap-narrow">
-    <p class="lead">Most SaaS founders start with cash basis accounting because their bookkeeper set it up that way, or because it felt intuitive. Cash in, cash out &mdash; easy to follow, easy to explain.</p>
+    <p class="lead">Most SaaS founders start with cash basis accounting because their bookkeeper set it up that way, or because it felt intuitive. Cash in, cash out. Easy to follow, easy to explain.</p>
     <p>Then a Series A investor asks for GAAP financials, or an acquirer requests audited statements, and suddenly "easy" becomes a six-figure cleanup project.</p>
     <p>Here's what you need to understand before you get there.</p>
 
     <h2>The Core Difference</h2>
     <p><strong>Cash basis accounting</strong> records revenue when you receive payment and expenses when you actually pay them. If a customer wires you $12,000 in January for an annual subscription, you record $12,000 of revenue in January.</p>
-    <p><strong>Accrual basis accounting</strong> records revenue when it's earned and expenses when they're incurred &mdash; regardless of when cash moves. That same $12,000 annual subscription gets recognized at $1,000 per month as you deliver the service.</p>
+    <p><strong>Accrual basis accounting</strong> records revenue when it's earned and expenses when they're incurred, regardless of when cash moves. That same $12,000 annual subscription gets recognized at $1,000 per month as you deliver the service.</p>
     <p>The difference sounds administrative. It isn't. It fundamentally changes what your financials show and how your business looks to anyone evaluating it.</p>
 
     <h2>Why Founders Default to Cash Basis</h2>
     <p>Cash basis is simpler to maintain, easier to reconcile to your bank account, and perfectly adequate when you're early and small. If you're pre-revenue or just getting started, it doesn't create meaningful distortion.</p>
-    <p>The IRS also allows cash basis for businesses under certain revenue thresholds, which means many early-stage companies end up on it by default &mdash; set up by a bookkeeper optimizing for tax simplicity rather than investor readiness.</p>
+    <p>The IRS also allows cash basis for businesses under certain revenue thresholds, which means many early-stage companies end up on it by default, set up by a bookkeeper optimizing for tax simplicity rather than investor readiness.</p>
     <p>None of that is wrong. The problem is staying on cash basis too long.</p>
 
     <h2>Where Cash Basis Breaks Down for SaaS</h2>
     <h3>Your Revenue Isn't What Your Bank Account Says</h3>
     <p>When a customer pays you annually upfront, cash basis makes that month look exceptionally strong. The following 11 months look artificially weak. Your revenue chart becomes a series of spikes and valleys that reflect billing cycles rather than business performance.</p>
-    <p>Investors and operators looking at your financials can't distinguish growth from billing timing noise &mdash; and neither can you.</p>
+    <p>Investors and operators looking at your financials can't distinguish growth from billing timing noise, and neither can you.</p>
     <h3>Your Expenses Don't Match Your Revenue</h3>
     <p>Under cash basis, if you prepay for annual software licenses or pay a contractor for a six-month project upfront, that entire cost hits your books immediately. Your margins look terrible that month and artificially clean the next. You lose the ability to understand your true cost of delivering each dollar of revenue.</p>
     <h3>You Can't See Your Real Liabilities</h3>
-    <p>Accrual accounting forces you to recognize deferred revenue &mdash; the cash you've collected but haven't yet earned &mdash; as a liability on your balance sheet. On cash basis, that obligation is invisible. You might look at your bank account and feel flush while carrying significant service delivery obligations you haven't accounted for.</p>
+    <p>Accrual accounting forces you to recognize deferred revenue, the cash you've collected but haven't yet earned, as a liability on your balance sheet. On cash basis, that obligation is invisible. You might look at your bank account and feel flush while carrying significant service delivery obligations you haven't accounted for.</p>
     <h3>GAAP Requires Accrual</h3>
-    <p>Any institutional investor, lender, or acquirer will want GAAP-compliant financials. GAAP requires accrual. The longer you stay on cash basis, the more historical periods will need to be restated when you finally make the switch &mdash; and restatements are expensive, time-consuming, and occasionally embarrassing.</p>
+    <p>Any institutional investor, lender, or acquirer will want GAAP-compliant financials. GAAP requires accrual. The longer you stay on cash basis, the more historical periods will need to be restated when you finally make the switch, and restatements are expensive, time-consuming, and occasionally embarrassing.</p>
 
     <h2>The Real Cost of Switching Late</h2>
     <p>The transition from cash to accrual isn't just a settings change in QuickBooks. It requires:</p>
@@ -704,7 +704,7 @@ CVA = """
       <li>Restating prior period financials if lenders or investors need comparative data</li>
       <li>Potentially re-filing taxes depending on the IRS method change rules (Form 3115)</li>
     </ul>
-    <p>For a company that's been on cash basis for three or four years with hundreds of contracts, this can run tens of thousands of dollars in accounting fees &mdash; and that's before the audit. We've seen it delay fundraising closes and create last-minute surprises in M&amp;A diligence.</p>
+    <p>For a company that's been on cash basis for three or four years with hundreds of contracts, this can run tens of thousands of dollars in accounting fees, and that's before the audit. We've seen it delay fundraising closes and create last-minute surprises in M&amp;A diligence.</p>
     <p>The earlier you make the switch, the cheaper and cleaner it is.</p>
 
     <h2>When to Make the Move</h2>
@@ -719,19 +719,19 @@ CVA = """
     <h2>What Accrual Unlocks</h2>
     <p>Beyond compliance, accrual accounting gives you a cleaner operating picture:</p>
     <ul>
-      <li><strong>Gross margin by cohort</strong> &mdash; you can see what it actually costs to serve each customer segment</li>
-      <li><strong>Accurate MRR/ARR</strong> &mdash; recognized revenue that reconciles to your subscription data</li>
-      <li><strong>Deferred revenue trends</strong> &mdash; a leading indicator of future recognized revenue and a signal investors pay attention to</li>
-      <li><strong>Expense matching</strong> &mdash; costs aligned to the period they support, so you can evaluate ROI on spend decisions</li>
+      <li><strong>Gross margin by cohort</strong>: you can see what it actually costs to serve each customer segment</li>
+      <li><strong>Accurate MRR/ARR</strong>: recognized revenue that reconciles to your subscription data</li>
+      <li><strong>Deferred revenue trends</strong>: a leading indicator of future recognized revenue and a signal investors pay attention to</li>
+      <li><strong>Expense matching</strong>: costs aligned to the period they support, so you can evaluate ROI on spend decisions</li>
     </ul>
-    <p>In short, accrual accounting gives you financials you can actually manage a business with &mdash; not just report to the IRS.</p>
+    <p>In short, accrual accounting gives you financials you can actually manage a business with, not just report to the IRS.</p>
 
     <h2>A Note on Hybrid Situations</h2>
     <p>Some early-stage companies run accrual for their internal management reporting while staying on cash basis for taxes. This is a legitimate approach that preserves tax simplicity while giving leadership a cleaner operating view. It requires maintaining two sets of books (or a clean reconciliation between them), but for the right company at the right stage, it's worth the effort.</p>
     <p>Talk to your accountant about whether a hybrid approach makes sense for you before making any changes.</p>
 
     <h2>The Bottom Line</h2>
-    <p>Cash basis accounting isn't wrong &mdash; it's just limited. It works fine early, and then it stops working. The mistake most founders make is waiting until external pressure forces the switch, rather than getting ahead of it.</p>
+    <p>Cash basis accounting isn't wrong, it's just limited. It works fine early, and then it stops working. The mistake most founders make is waiting until external pressure forces the switch, rather than getting ahead of it.</p>
     <p>If you're building a SaaS company with any ambition to raise institutional capital, get acquired, or simply understand your own business, you'll end up on accrual eventually. The only question is whether you make that transition on your timeline or someone else's.</p>
     <div class="outro">Sandhill HQ helps SaaS companies build the financial infrastructure to grow with confidence. If you're not sure whether your current accounting setup will hold up under investor or acquirer scrutiny, we would love to help!</div>
 
