@@ -34,7 +34,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="{prefix}index.html"><svg class="logo-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>Sandhill<span>&nbsp;HQ</span></a>
+    <a class="logo" href="{prefix}index.html"><img class="logo-mark" src="{prefix}assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="{prefix}index.html"{cls('home')}>Home</a>
       <a href="{prefix}services.html"{cls('services')}>Services</a>
@@ -54,7 +54,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="{prefix}index.html"><svg class="logo-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>Sandhill<span>&nbsp;HQ</span></a>
+        <a class="logo" href="{prefix}index.html"><img class="logo-mark" src="{prefix}assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
         <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
@@ -153,7 +153,7 @@ pages["index.html"] = dict(
       <a class="btn btn-ghost" href="services.html">Explore our services</a>
     </div>
   </div>
-  <svg class="hero-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>
+  <img class="hero-mark" src="assets/logo-mark.png" alt="" aria-hidden="true">
 </section>
 
 <section class="strip">

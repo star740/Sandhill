@@ -56,7 +56,7 @@ img{max-width:100%;display:block}
 .page-hero{position:relative;overflow:hidden}
 .page-hero::after{
   content:"";position:absolute;right:-40px;bottom:-18px;width:240px;height:142px;
-  background:url("assets/logo-mark.svg") no-repeat center/contain;
+  background:url("assets/logo-mark.png") no-repeat center/contain;
   opacity:.22;pointer-events:none;
 }
 .page-hero .wrap,.page-hero .wrap-narrow{position:relative;z-index:1}
