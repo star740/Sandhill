@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=1784257403">
-</head>
+<style>.post-img:hover{transform:translateY(-4px)}.post-img .cat{color:#C99B5F}.post-img .read{color:#1E2B4F}</style></head>
 <body>
 
 <header>
@@ -139,6 +139,40 @@
   </div>
 </section>
 
+
+<!-- TESTIMONIALS (preview - FILLER QUOTES, replace before launch) -->
+<section class="section" id="sh-testi" style="padding:96px 0">
+  <div class="wrap" style="max-width:860px;text-align:center">
+    <span class="eyebrow" style="justify-content:center">What clients say</span>
+    <div id="t-quote" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B;min-height:4.2em;transition:opacity .9s">&ldquo;Filler testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.&rdquo;</div>
+    <div id="t-name" style="margin-top:22px;font-weight:600;color:#1E2B4F;transition:opacity .9s">[Client Name] &middot; Founder, B2B SaaS <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span></div>
+    <div id="t-pips" style="display:flex;gap:10px;justify-content:center;margin-top:30px"></div>
+  </div>
+<script>
+(function(){
+  var quotes=[
+    {q:'\u201CFiller testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.\u201D',n:'[Client Name] \u00B7 Founder, B2B SaaS'},
+    {q:'\u201CFiller testimonial: It\u2019s like having a controller, a bookkeeper, and an accounting team without making a single hire. Board reporting went from dreaded to done.\u201D',n:'[Client Name] \u00B7 CEO, Tech Startup'},
+    {q:'\u201CFiller testimonial: They implemented ASC 606 revenue recognition properly the first time. Our auditors had zero findings.\u201D',n:'[Client Name] \u00B7 COO, SaaS Platform'}
+  ];
+  var qe=document.getElementById('t-quote'),ne=document.getElementById('t-name'),pp=document.getElementById('t-pips');
+  quotes.forEach(function(_,k){var s=document.createElement('span');s.style.cssText='width:26px;height:3px;border-radius:2px;background:'+(k===0?'#C99B5F':'rgba(21,27,43,.15)')+';transition:background .8s';pp.appendChild(s);});
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var i=0;
+  setInterval(function(){
+    i=(i+1)%quotes.length;
+    qe.style.opacity='0';ne.style.opacity='0';
+    setTimeout(function(){
+      qe.innerHTML=quotes[i].q;
+      ne.innerHTML=quotes[i].n+' <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span>';
+      qe.style.opacity='1';ne.style.opacity='1';
+      for(var k=0;k<quotes.length;k++)pp.children[k].style.background=(k===i)?'#C99B5F':'rgba(21,27,43,.15)';
+    },900);
+  },7500);
+})();
+</script>
+</section>
+
 <section class="section">
   <div class="wrap">
     <div class="section-head center reveal">
@@ -188,8 +222,7 @@
     s.style.cssText = 'width:26px;height:3px;border-radius:2px;background:' + (k === 0 ? '#C99B5F' : 'rgba(250,247,241,.25)') + ';transition:background .8s;';
     pips.appendChild(s);
   });
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduced) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   function ease(t) { return 1 - Math.pow(1 - t, 3); }
   function count(el, target, dur, fmt) {
     var t0 = performance.now();
@@ -226,21 +259,64 @@
       <span class="eyebrow">Insights &amp; resources</span>
       <h2>From the Sandhill <em>desk</em></h2>
     </div>
+
     <div class="posts">
-      <a class="post reveal" href="blog/asc-606-saas-revenue-recognition.html">
-        <span class="cat">GAAP Accounting</span>
-        <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
-        <span class="read">Read article &rarr;</span>
+      <a class="post post-img reveal" href="blog/asc-606-saas-revenue-recognition.html" style="background:#fff;color:#151B2B;padding:0;overflow:hidden;border:1px solid rgba(21,27,43,.14)">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
+          <rect width="400" height="150" fill="#1E2B4F"/>
+          <path d="M0 150 C80 90 160 120 240 80 C300 50 360 70 400 40 L400 150 Z" fill="#C99B5F" opacity=".5"/>
+          <path d="M0 150 C120 120 220 140 400 95 L400 150 Z" fill="#EDE3D2" opacity=".35"/>
+          <path d="M40 105 L110 70 L180 88 L260 45 L330 60 L385 28" stroke="#FAF7F1" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="385" cy="28" r="5" fill="#C99B5F"/>
+        </svg>
+        <span style="display:flex;flex-direction:column;gap:12px;padding:26px 28px">
+          <span class="cat">GAAP Accounting</span>
+          <h3 style="color:#151B2B">ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
+          <span class="read">Read article &rarr;</span>
+        </span>
       </a>
-      <a class="post reveal" href="blog/cash-vs-accrual-accounting.html">
-        <span class="cat">GAAP Accounting</span>
-        <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
-        <span class="read">Read article &rarr;</span>
+      <a class="post post-img reveal" href="blog/cash-vs-accrual-accounting.html" style="background:#fff;color:#151B2B;padding:0;overflow:hidden;border:1px solid rgba(21,27,43,.14)">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
+          <rect width="400" height="150" fill="#1E2B4F"/>
+          <path d="M0 150 C100 100 200 130 400 70 L400 150 Z" fill="#EDE3D2" opacity=".3"/>
+          <g stroke="#FAF7F1" stroke-width="3" stroke-linecap="round">
+            <line x1="70" y1="120" x2="70" y2="82"/><line x1="130" y1="120" x2="130" y2="64"/>
+            <line x1="190" y1="120" x2="190" y2="94"/><line x1="250" y1="120" x2="250" y2="50"/>
+            <line x1="310" y1="120" x2="310" y2="72"/>
+          </g>
+          <line x1="40" y1="120" x2="360" y2="120" stroke="#C99B5F" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span style="display:flex;flex-direction:column;gap:12px;padding:26px 28px">
+          <span class="cat">GAAP Accounting</span>
+          <h3 style="color:#151B2B">Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
+          <span class="read">Read article &rarr;</span>
+        </span>
       </a>
     </div>
   </div>
 </section>
 
+
+
+<!-- ANIMATED DUNE DIVIDER (preview) -->
+<div aria-hidden="true" style="overflow:hidden;line-height:0;background:#FAF7F1">
+  <div class="dune-track" style="display:flex;width:200%;animation:duneDrift 38s linear infinite">
+    <svg viewBox="0 0 1200 110" preserveAspectRatio="none" style="width:50%;height:96px;flex:none">
+      <path d="M0 110 C150 40 320 85 480 60 C640 35 800 80 960 55 C1080 38 1150 55 1200 45 L1200 110 Z" fill="#EDE3D2"/>
+      <path d="M0 110 C200 75 380 100 560 82 C740 64 900 95 1200 70 L1200 110 Z" fill="#C99B5F" opacity=".35"/>
+      <path d="M0 110 C260 95 520 108 780 96 C980 87 1120 100 1200 92 L1200 110 Z" fill="#1E2B4F" opacity=".16"/>
+    </svg>
+    <svg viewBox="0 0 1200 110" preserveAspectRatio="none" style="width:50%;height:96px;flex:none">
+      <path d="M0 110 C150 40 320 85 480 60 C640 35 800 80 960 55 C1080 38 1150 55 1200 45 L1200 110 Z" fill="#EDE3D2"/>
+      <path d="M0 110 C200 75 380 100 560 82 C740 64 900 95 1200 70 L1200 110 Z" fill="#C99B5F" opacity=".35"/>
+      <path d="M0 110 C260 95 520 108 780 96 C980 87 1120 100 1200 92 L1200 110 Z" fill="#1E2B4F" opacity=".16"/>
+    </svg>
+  </div>
+</div>
+<style>
+@keyframes duneDrift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.dune-track{animation:none}}
+</style>
 
 <section class="cta">
   <h2 class="reveal">Supporting your growth today, preparing you for tomorrow</h2>
