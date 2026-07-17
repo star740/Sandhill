@@ -29,6 +29,7 @@ def shell(title, desc, body, prefix="", active=""):
   <div class="wrap nav">
     <a class="logo" href="{prefix}index.html">Sandhill<span>&nbsp;HQ</span></a>
     <nav class="nav-links" id="navLinks">
+      <a href="{prefix}index.html"{cls('home')}>Home</a>
       <a href="{prefix}services.html"{cls('services')}>Services</a>
       <a href="{prefix}about.html"{cls('about')}>About Us</a>
       <a href="{prefix}blog.html"{cls('blog')}>Insights</a>
