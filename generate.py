@@ -25,13 +25,16 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="64x64" href="{prefix}assets/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="{prefix}assets/favicon-192.png">
+<link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{prefix}style.css?v={V}">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="{prefix}index.html">Sandhill<span>&nbsp;HQ</span></a>
+    <a class="logo" href="{prefix}index.html"><svg class="logo-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>Sandhill<span>&nbsp;HQ</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="{prefix}index.html"{cls('home')}>Home</a>
       <a href="{prefix}services.html"{cls('services')}>Services</a>
@@ -51,7 +54,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="{prefix}index.html">Sandhill<span>&nbsp;HQ</span></a>
+        <a class="logo" href="{prefix}index.html"><svg class="logo-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>Sandhill<span>&nbsp;HQ</span></a>
         <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
@@ -150,11 +153,7 @@ pages["index.html"] = dict(
       <a class="btn btn-ghost" href="services.html">Explore our services</a>
     </div>
   </div>
-  <svg class="dunes" viewBox="0 0 640 320" fill="none" aria-hidden="true">
-    <path d="M0 320 C120 220 260 260 380 200 C480 150 560 170 640 120 L640 320 Z" fill="#EDE3D2"/>
-    <path d="M0 320 C160 260 300 300 430 250 C530 212 590 225 640 195 L640 320 Z" fill="#C99B5F" opacity=".35"/>
-    <path d="M0 320 C180 290 340 315 640 260 L640 320 Z" fill="#1E2B4F" opacity=".18"/>
-  </svg>
+  <svg class="hero-mark" viewBox="0 0 220 130" aria-hidden="true"><g stroke-linejoin="round" stroke-width="7"><path d="M97 12 L15 115 L104 115 Z" fill="#DCC8A0" stroke="#DCC8A0"/><path d="M148 50 L113 115 L204 115 Z" fill="#ECDCB9" stroke="#ECDCB9"/></g></svg>
 </section>
 
 <section class="strip">
