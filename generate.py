@@ -38,6 +38,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
     <nav class="nav-links" id="navLinks">
       <a href="{prefix}index.html"{cls('home')}>Home</a>
       <a href="{prefix}services.html"{cls('services')}>Services</a>
+      <a href="{prefix}roadmap.html"{cls('roadmap')}>Roadmap</a>
       <a href="{prefix}about.html"{cls('about')}>About Us</a>
       <a href="{prefix}blog.html"{cls('blog')}>Insights</a>
     </nav>
@@ -60,6 +61,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
       <div>
         <h4>Company</h4>
         <a href="{prefix}about.html">About Us</a>
+        <a href="{prefix}roadmap.html">Founder's Roadmap</a>
         <a href="{prefix}faq.html">FAQ</a>
         <a href="{prefix}blog.html">Insights</a>
       </div>
@@ -609,6 +611,126 @@ pages["blog.html"] = dict(
         <span class="read">Read article &rarr;</span>
       </a>
     </div>
+  </div>
+</section>
+""")
+
+pages["roadmap.html"] = dict(
+    title="The Founder's Finance Roadmap | Sandhill HQ",
+    desc="A free two-page roadmap for founders: what to have in place at every stage of growth, the reports that matter, and the benchmarks worth watching. From Sandhill HQ.",
+    active="roadmap",
+    body=f"""
+<section class="page-hero">
+  <div class="wrap page-hero-grid">
+    <div>
+      <span class="eyebrow">Free resource</span>
+      <h1>The Founder's Finance <em>Roadmap</em></h1>
+      <p>What to have in place at every stage of growth, from first dollar to investor-ready. A two-page reference built for founders: the checklist for each stage, the reports that matter, and the benchmarks worth watching.</p>
+      <div class="hero-actions" style="margin-top:32px">
+        <a class="btn btn-primary" href="assets/sandhill-founders-finance-roadmap.pdf" download>Download the roadmap (PDF)</a>
+      </div>
+    </div>
+    <div class="rm-cover reveal">
+      <div class="rm-cover-card">
+        <span>SANDHILL HQ &middot; FINANCE AS A SERVICE</span>
+        <strong>The Founder's Finance Roadmap</strong>
+        <div class="rm-cover-stages"><b>01</b> Foundation &middot; <b>02</b> Traction &middot; <b>03</b> Growth &middot; <b>04</b> Scale</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services-bg" style="padding-top:64px">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The four stages</span>
+      <h2>Where are <em>you</em> on the roadmap?</h2>
+    </div>
+    <div class="rm-grid">
+      <div class="pillar reveal">
+        <div class="tag">01 &middot; Foundation &middot; Pre-revenue to first customers</div>
+        <h3>Build a foundation clean enough that growth never means cleanup</h3>
+        <ul>
+          <li>Separate business banking and credit</li>
+          <li>Entity, EIN, and state registrations in order</li>
+          <li>Accounting system set up correctly from day one</li>
+          <li>Books reconciled monthly, not at tax time</li>
+          <li>Runway and burn tracked every month</li>
+        </ul>
+        <a class="rm-tie" href="services.html#bookkeeping">Sandhill covers this: Bookkeeping &amp; Operations &rarr;</a>
+      </div>
+      <div class="pillar reveal">
+        <div class="tag">02 &middot; Traction &middot; Early revenue to $1M ARR</div>
+        <h3>Know your numbers well enough to trust them</h3>
+        <ul>
+          <li>Monthly close, done on a schedule</li>
+          <li>Payroll and contractor compliance (W-2 vs. 1099)</li>
+          <li>Sales tax nexus reviewed as you sell across states</li>
+          <li>Deferred revenue tracked, not lumped into income</li>
+          <li>Baseline unit economics: gross margin and CAC</li>
+        </ul>
+        <a class="rm-tie" href="services.html#accounting">Sandhill covers this: Accounting &amp; Reporting &rarr;</a>
+      </div>
+      <div class="pillar reveal">
+        <div class="tag">03 &middot; Growth &middot; $1M to $5M ARR</div>
+        <h3>Financials that drive decisions, not just tax returns</h3>
+        <ul>
+          <li>Move from cash to accrual accounting</li>
+          <li>Revenue recognition aligned to ASC 606</li>
+          <li>Budget vs. actual reporting, reviewed monthly</li>
+          <li>SaaS metrics: NRR, churn, burn multiple, LTV:CAC</li>
+          <li>A documented month-end close process</li>
+        </ul>
+        <a class="rm-tie" href="services.html#accounting">Sandhill covers this: Accounting &amp; Controller support &rarr;</a>
+      </div>
+      <div class="pillar reveal">
+        <div class="tag">04 &middot; Scale &middot; $5M+ or raising capital</div>
+        <h3>Numbers that stand up to diligence</h3>
+        <ul>
+          <li>GAAP-compliant financial statements</li>
+          <li>Audit-ready support and documentation</li>
+          <li>Board-ready monthly reporting package</li>
+          <li>Forecasting and scenario modeling</li>
+          <li>Data room prepared for due diligence</li>
+        </ul>
+        <a class="rm-tie" href="services.html#controller">Sandhill covers this: Controller Services &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">From page two</span>
+      <h2>The metrics worth <em>benchmarking</em></h2>
+      <p style="max-width:56ch;margin:18px auto 0;color:rgba(21,27,43,.72)">If these aren't on a dashboard somewhere, they're running your business without you. The full roadmap includes the complete reporting stack for every stage.</p>
+    </div>
+    <div class="rm-table-wrap reveal">
+      <table class="rm-table">
+        <thead><tr><th>Metric</th><th>What it tells you</th><th>Healthy target</th></tr></thead>
+        <tbody>
+          <tr><td>Gross margin</td><td>Whether the product can fund growth</td><td>70&ndash;80%+</td></tr>
+          <tr><td>Net revenue retention</td><td>Growth from customers you already have</td><td>100%+ &middot; best-in-class 110%+</td></tr>
+          <tr><td>CAC payback period</td><td>How fast sales &amp; marketing pays for itself</td><td>Under 12&ndash;18 months</td></tr>
+          <tr><td>LTV : CAC</td><td>Return on acquiring a customer</td><td>3:1 or better</td></tr>
+          <tr><td>Burn multiple</td><td>Cash burned per $1 of net new ARR</td><td>Under 2x &middot; elite under 1x</td></tr>
+          <tr><td>Rule of 40</td><td>Balance of growth and profitability</td><td>Growth % + margin % &ge; 40</td></tr>
+          <tr><td>Runway</td><td>Months of cash at current burn</td><td>12&ndash;18+ months</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="reveal" style="text-align:center;font-size:13.5px;color:rgba(21,27,43,.55);margin-top:16px">Benchmarks are directional and vary by stage, market, and model. The point is to know yours and watch the trend.</p>
+    <div class="reveal" style="text-align:center;margin-top:36px">
+      <a class="btn btn-primary" href="assets/sandhill-founders-finance-roadmap.pdf" download>Download the full roadmap (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+    <h2 class="reveal" style="max-width:24ch">Wherever you are on the roadmap, you don't have to build the finance function alone</h2>
+    <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
   </div>
 </section>
 """)
