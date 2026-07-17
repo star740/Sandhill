@@ -155,20 +155,11 @@ POSTS = '''
 import re
 c = open('index.html').read()
 
-# 1) reel between software section and insights section
-marker = '<section class="section" style="padding-top:0">'
-assert marker in c
-c = c.replace(marker, REEL + '\n' + marker, 1)
-
-# 2) testimonial band between services (sand) and software sections
-tools_marker = '<section class="section">\n  <div class="wrap">\n    <div class="section-head center reveal">\n      <span class="eyebrow">Software we know</span>'
-assert tools_marker in c
-c = c.replace(tools_marker, TESTIMONIALS + '\n' + tools_marker, 1)
-
-# 3) animated dune divider above the closing CTA
-cta_marker = '<section class="cta">'
-assert cta_marker in c
-c = c.replace(cta_marker, DUNES + '\n' + cta_marker, 1)
+# testimonials then reel, both between services (sand) and software sections
+tools_marker_a = '<span class="eyebrow">Software we know</span>'
+assert tools_marker_a in c
+idx = c.index('<section class="section">\n  <div class="wrap">\n    <div class="section-head center reveal">\n      ' + tools_marker_a)
+c = c[:idx] + TESTIMONIALS + '\n' + REEL + '\n' + c[idx:]
 
 # 4) illustrated blog cards
 posts_re = re.compile(r'    <div class="posts">.*?</div>\n', re.S)

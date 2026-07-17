@@ -262,10 +262,13 @@ pages["services.html"] = dict(
     active="services",
     body=f"""
 <section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow">Our services</span>
-    <h1>Finance as a <em>Service</em></h1>
-    <p>Three layers of support that work together as one finance function, from daily transactions to controller-level oversight. Engage the full stack or just the layer you need today, and scale as you grow.</p>
+  <div class="wrap page-hero-grid">
+    <div>
+      <span class="eyebrow">Our services</span>
+      <h1>Finance as a <em>Service</em></h1>
+      <p>Three layers of support that work together as one finance function, from daily transactions to controller-level oversight. Engage the full stack or just the layer you need today, and scale as you grow.</p>
+    </div>
+    <img src="assets/dashboard-1.jpg" alt="Financial dashboard with cash flow, revenue, and reporting on a laptop beside a Sandhill notebook" width="1400" height="1051" loading="eager">
   </div>
 </section>
 
@@ -465,10 +468,13 @@ pages["blog.html"] = dict(
     active="blog",
     body="""
 <section class="page-hero">
-  <div class="wrap">
-    <span class="eyebrow">Insights &amp; resources</span>
-    <h1>From the Sandhill <em>desk</em></h1>
-    <p>Practical accounting and finance guidance for founders, written from the trenches, not the textbook.</p>
+  <div class="wrap page-hero-grid">
+    <div>
+      <span class="eyebrow">Insights &amp; resources</span>
+      <h1>From the Sandhill <em>desk</em></h1>
+      <p>Practical accounting and finance guidance for founders, written from the trenches, not the textbook.</p>
+    </div>
+    <img src="assets/dashboard-2.jpg" alt="Financial performance dashboard with revenue and profit charts on a laptop" width="1400" height="1050" loading="eager">
   </div>
 </section>
 
