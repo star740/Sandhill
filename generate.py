@@ -99,39 +99,14 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 pages = {}
 
 TESTI_REEL = '''
-<!-- TESTIMONIALS (preview - FILLER QUOTES, replace before launch) -->
+<!-- TESTIMONIAL -->
 <section class="section" id="sh-testi" style="padding:96px 0">
   <div class="wrap" style="max-width:860px;text-align:center">
     <span class="eyebrow" style="justify-content:center">What clients say</span>
-    <div id="t-quote" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B;min-height:4.2em;transition:opacity .9s">&ldquo;Filler testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.&rdquo;</div>
-    <div id="t-name" style="margin-top:22px;font-weight:600;color:#1E2B4F;transition:opacity .9s">[Client Name] &middot; Founder, B2B SaaS <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span></div>
-    <div id="t-pips" style="display:flex;gap:10px;justify-content:center;margin-top:30px"></div>
+    <div class="reveal" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B">&ldquo;Sandhill was a fantastic partner - reliable, proactive, and skilled across the board. They supported us with month-end close, reporting, ad hoc projects, financial analysis and much more. The work was accurate and thoughtful, and they adapted quickly to our needs. Highly recommend!&rdquo;</div>
+    <div class="reveal" style="margin-top:22px;font-weight:600;color:#1E2B4F">Anthony &middot; CFO, Technology Company</div>
   </div>
-<script>
-(function(){
-  var quotes=[
-    {q:'\\u201CFiller testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.\\u201D',n:'[Client Name] \\u00B7 Founder, B2B SaaS'},
-    {q:'\\u201CFiller testimonial: It\\u2019s like having a controller, a bookkeeper, and an accounting team without making a single hire. Board reporting went from dreaded to done.\\u201D',n:'[Client Name] \\u00B7 CEO, Tech Startup'},
-    {q:'\\u201CFiller testimonial: They implemented ASC 606 revenue recognition properly the first time. Our auditors had zero findings.\\u201D',n:'[Client Name] \\u00B7 COO, SaaS Platform'}
-  ];
-  var qe=document.getElementById('t-quote'),ne=document.getElementById('t-name'),pp=document.getElementById('t-pips');
-  quotes.forEach(function(_,k){var s=document.createElement('span');s.style.cssText='width:26px;height:3px;border-radius:2px;background:'+(k===0?'#C99B5F':'rgba(21,27,43,.15)')+';transition:background .8s';pp.appendChild(s);});
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var i=0;
-  setInterval(function(){
-    i=(i+1)%quotes.length;
-    qe.style.opacity='0';ne.style.opacity='0';
-    setTimeout(function(){
-      qe.innerHTML=quotes[i].q;
-      ne.innerHTML=quotes[i].n+' <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span>';
-      qe.style.opacity='1';ne.style.opacity='1';
-      for(var k=0;k<quotes.length;k++)pp.children[k].style.background=(k===i)?'#C99B5F':'rgba(21,27,43,.15)';
-    },900);
-  },7500);
-})();
-</script>
 </section>
-
 
 <!-- PROOF REEL (preview) -->
 <section class="strip">

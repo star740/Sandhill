@@ -89,13 +89,13 @@ dy = H - 168; dh = 52
 rrect(M, dy, W - 2*M, dh, 8, SAND_SOFT)
 text(M + 16, dy + dh - 18, "WHICH STAGE ARE YOU IN?", 'Inter', 8, NAVY, tracking=0.6)
 opts = [("Pre-revenue", "Stage 01"), ("Under $1M ARR", "Stage 02"), ("$1M to $5M ARR", "Stage 03"), ("$5M+ or raising", "Stage 04")]
-ox = M + 16
-for label, stage in opts:
+slot = (W - 2*M - 32) / 4
+for i, (label, stage) in enumerate(opts):
+    ox = M + 16 + i * slot
     checkbox(ox, dy + 11)
-    text(ox + 12, dy + 12, label, 'Inter', 8.5, INK)
-    lw_ = c.stringWidth(label, 'Inter', 8.5)
-    text(ox + 12 + lw_ + 5, dy + 12, "· " + stage, 'Inter', 8.5, SAND)
-    ox += 12 + lw_ + 5 + c.stringWidth("· " + stage, 'Inter', 8.5) + 18
+    text(ox + 12, dy + 12, label, 'Inter', 8, INK)
+    lw_ = c.stringWidth(label, 'Inter', 8)
+    text(ox + 12 + lw_ + 4, dy + 12, "· " + stage, 'Inter', 8, SAND)
 
 # stage cards 2x2
 stages = [
@@ -145,11 +145,11 @@ for i, (num, name, sub, lead, items) in enumerate(stages):
         ly -= 3.5
 
 # how sandhill helps strip
-hy = 92; hh = 64
+hy = 88; hh = 76
 rrect(M, hy, W - 2*M, hh, 8, WHITE, LINE)
 text(M + 16, hy + hh - 20, "HOW SANDHILL HELPS AT EVERY STAGE", 'Inter', 8, NAVY, tracking=0.6)
-helps = "Stages 01-02: Bookkeeping & Financial Operations   ·   Stages 02-03: Accounting & Reporting (ASC 606, GAAP)   ·   Stages 03-04: Controller Services"
-text(M + 16, hy + hh - 37, helps, 'Inter', 8.2, HexColor('#3A4058'))
+text(M + 16, hy + hh - 36, "Stages 01-02: Bookkeeping & Financial Operations   ·   Stages 02-03: Accounting & Reporting (ASC 606, GAAP)", 'Inter', 8.2, HexColor('#3A4058'))
+text(M + 16, hy + hh - 49, "Stages 03-04: Controller Services", 'Inter', 8.2, HexColor('#3A4058'))
 text(M + 16, hy + 12, "Every unchecked box on this page is something we take off a founder's plate.", 'Lora', 9.5, HexColor('#8A6A38'))
 
 footer_band("Page 1 of 2  ·  sandhillhq.com")
@@ -219,16 +219,19 @@ c.roundRect(M, ty - len(rows)*rh, tw, len(rows)*rh + th_, 6, fill=0, stroke=1)
 ctext(W/2, ty - len(rows)*rh - 16, "Benchmarks are directional and vary by stage, market, and model. The point is to know yours and watch the trend.", 'Inter', 7.8, GREY)
 
 # closing CTA card
-qy = 92; qh = 74; qw = W - 2*M
+qy = 92; qh = 84; qw = W - 2*M
 rrect(M, qy, qw, qh, 10, NAVY)
-text(M + 20, qy + qh - 24, "WANT THIS STACK BUILT FOR YOU?", 'Inter', 8, HexColor('#C9AF7E'), tracking=0.6)
-text(M + 20, qy + qh - 42, "Sandhill sets up the core, SaaS, and board reporting layers as part of Finance as a Service,", 'Lora', 10.5, PAPER)
-text(M + 20, qy + qh - 56, "then runs them every month so your numbers are always current, compliant, and board-ready.", 'Lora', 10.5, PAPER)
 btn = "Book an intro call"
 bw = c.stringWidth(btn, 'Inter', 9) + 28
-rrect(M + qw - bw - 18, qy + 14, bw, 24, 12, SAND)
-ctext(M + qw - bw/2 - 18, qy + 21.5, btn, 'Inter', 9, NAVY_D)
-c.linkURL(CAL, (M + qw - bw - 18, qy + 14, M + qw - 18, qy + 38), relative=0)
+text(M + 20, qy + qh - 24, "WANT THIS STACK BUILT FOR YOU?", 'Inter', 8, HexColor('#C9AF7E'), tracking=0.6)
+cta_copy = "Sandhill sets up the core, SaaS, and board reporting layers as part of Finance as a Service, then runs them every month so your numbers are always current, compliant, and board-ready."
+ly = qy + qh - 42
+for ln in wrap(cta_copy, 'Lora', 10.5, qw - 40 - bw - 30):
+    text(M + 20, ly, ln, 'Lora', 10.5, PAPER); ly -= 14
+by = qy + (qh - 24) / 2
+rrect(M + qw - bw - 18, by, bw, 24, 12, SAND)
+ctext(M + qw - bw/2 - 18, by + 7.5, btn, 'Inter', 9, NAVY_D)
+c.linkURL(CAL, (M + qw - bw - 18, by, M + qw - 18, by + 24), relative=0)
 
 footer_band("Page 2 of 2  ·  sandhillhq.com")
 c.showPage()
