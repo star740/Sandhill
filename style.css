@@ -135,6 +135,13 @@ header{
 .pillar li::before{content:"•";color:var(--sand);flex:none;font-size:13px;line-height:inherit}
 
 /* ROADMAP */
+.rm-gate{display:flex;gap:10px;flex-wrap:wrap}
+.rm-gate input{padding:13px 18px;border:1px solid var(--line);border-radius:999px;font:inherit;font-size:15px;min-width:250px;background:#fff;color:var(--ink)}
+.rm-gate input:focus{outline:2px solid var(--sand);border-color:var(--sand)}
+.rm-gate-note{font-size:12.5px;color:rgba(21,27,43,.55);margin-top:10px}
+.rm-gate-done{font-size:15px;font-weight:600;color:var(--navy)}
+.rm-gate-done a{text-decoration:underline;color:#8A6A38}
+
 .rm-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .rm-grid .pillar h3{font-size:19px}
 .rm-tie{display:inline-block;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:14px;font-weight:600;color:var(--navy);width:100%}

@@ -615,6 +615,37 @@ pages["blog.html"] = dict(
 </section>
 """)
 
+RM_GATE_JS = """<script>
+(function(){
+  var f=document.getElementById('rmForm');
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=f.email.value;
+    var btn=document.getElementById('rmBtn');
+    btn.disabled=true;btn.textContent='One moment...';
+    function done(){
+      f.hidden=true;
+      var n=document.getElementById('rmGateNote'); if(n)n.hidden=true;
+      document.getElementById('rmDone').hidden=false;
+      var a=document.createElement('a');
+      a.href='assets/sandhill-founders-finance-roadmap.pdf';a.download='';
+      document.body.appendChild(a);a.click();a.remove();
+    }
+    fetch('https://formsubmit.co/ajax/star@sandhillhq.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        email:email,
+        _subject:'New Roadmap download on sandhillhq.com',
+        message:'This email just downloaded the Founders Finance Roadmap: '+email,
+        _template:'table'
+      })
+    }).then(done).catch(done);
+  });
+})();
+</script>"""
+
 pages["roadmap.html"] = dict(
     title="The Founder's Finance Roadmap | Sandhill HQ",
     desc="A free two-page roadmap for founders: what to have in place at every stage of growth, the reports that matter, and the benchmarks worth watching. From Sandhill HQ.",
@@ -626,9 +657,15 @@ pages["roadmap.html"] = dict(
       <span class="eyebrow">Free resource</span>
       <h1>The Founder's Finance <em>Roadmap</em></h1>
       <p>What to have in place at every stage of growth, from first dollar to investor-ready. A two-page reference built for founders: the checklist for each stage, the reports that matter, and the benchmarks worth watching.</p>
-      <div class="hero-actions" style="margin-top:32px">
-        <a class="btn btn-primary" href="assets/sandhill-founders-finance-roadmap.pdf" download>Download the roadmap (PDF)</a>
+      <div id="get-roadmap" style="margin-top:32px">
+        <form id="rmForm" class="rm-gate">
+          <input type="email" name="email" required placeholder="you@company.com" aria-label="Work email">
+          <button id="rmBtn" class="btn btn-primary" type="submit">Get the roadmap (PDF)</button>
+        </form>
+        <p class="rm-gate-note" id="rmGateNote">Enter your email and the download starts instantly.</p>
+        <div id="rmDone" hidden><p class="rm-gate-done">Your download is starting. <a href="assets/sandhill-founders-finance-roadmap.pdf" download>Click here</a> if it doesn't.</p></div>
       </div>
+{RM_GATE_JS}
     </div>
     <div class="rm-cover reveal">
       <div class="rm-cover-card">
@@ -722,7 +759,7 @@ pages["roadmap.html"] = dict(
     </div>
     <p class="reveal" style="text-align:center;font-size:13.5px;color:rgba(21,27,43,.55);margin-top:16px">Benchmarks are directional and vary by stage, market, and model. The point is to know yours and watch the trend.</p>
     <div class="reveal" style="text-align:center;margin-top:36px">
-      <a class="btn btn-primary" href="assets/sandhill-founders-finance-roadmap.pdf" download>Download the full roadmap (PDF)</a>
+      <a class="btn btn-primary" href="#get-roadmap">Get the full roadmap (PDF)</a>
     </div>
   </div>
 </section>
