@@ -221,6 +221,20 @@ header{
 .contact-card .detail{font-size:15px;margin-bottom:10px;display:flex;gap:10px;align-items:baseline}
 .contact-card .detail::before{content:"•";color:var(--sand);font-size:13px}
 
+/* HOME CLOSING INSIGHTS */
+.cta-insights{padding:96px 24px;text-align:center}
+.cta-insights h2{margin:0 auto 40px}
+.eyebrow-light{color:var(--sand)}
+.eyebrow-light::before{background:var(--sand)}
+.cta-insights .eyebrow{justify-content:center}
+.cta-insights .eyebrow::after{content:"";width:26px;height:1px;background:var(--sand)}
+.posts-light{text-align:left;margin-bottom:44px}
+.post-white{background:#fff;color:var(--ink);padding:0;overflow:hidden;border:1px solid rgba(21,27,43,.14)}
+.post-white .post-body{display:flex;flex-direction:column;gap:12px;padding:26px 28px;flex:1}
+.post-white h3{color:var(--ink)}
+.post-white .cat{color:#B0803E}
+.post-white .read{color:var(--navy)}
+
 /* CTA */
 .cta{background:var(--navy-deep);color:var(--paper);text-align:center;padding:110px 24px}
 .cta h2{font-size:clamp(32px,4.6vw,56px);max-width:20ch;margin:0 auto 34px}

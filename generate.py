@@ -7,10 +7,14 @@ V = str(int(time.time()))
 
 CAL = "https://calendar.app.google/ngdhcYuakQkRgjyx5"
 
-def shell(title, desc, body, prefix="", active=""):
+def shell(title, desc, body, prefix="", active="", cta_html=None):
     V = VERSION
     def cls(name):
         return ' class="active"' if name == active else ""
+    cta_section = cta_html if cta_html is not None else f"""<section class="cta">
+  <h2 class="reveal">Supporting your growth today, preparing you for tomorrow</h2>
+  <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
+</section>"""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,10 +45,7 @@ def shell(title, desc, body, prefix="", active=""):
 
 {body}
 
-<section class="cta">
-  <h2 class="reveal">Supporting your growth today, preparing you for tomorrow</h2>
-  <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
-</section>
+{cta_section}
 
 <footer>
   <div class="wrap">
@@ -92,8 +93,49 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 pages = {}
 
+home_cta = f"""<section class="cta cta-insights">
+  <div class="wrap">
+    <span class="eyebrow eyebrow-light reveal">Insights &amp; resources</span>
+    <h2 class="reveal">From the Sandhill <em>desk</em></h2>
+    <div class="posts posts-light">
+      <a class="post post-white reveal" href="blog/asc-606-saas-revenue-recognition.html">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
+          <rect width="400" height="150" fill="#EDE3D2"/>
+          <path d="M0 150 C80 100 160 128 240 92 C300 66 360 84 400 56 L400 150 Z" fill="#C99B5F" opacity=".45"/>
+          <path d="M40 105 L110 70 L180 88 L260 45 L330 60 L385 28" stroke="#1E2B4F" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="385" cy="28" r="5" fill="#1E2B4F"/>
+        </svg>
+        <span class="post-body">
+          <span class="cat">GAAP Accounting</span>
+          <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
+          <span class="read">Read article &rarr;</span>
+        </span>
+      </a>
+      <a class="post post-white reveal" href="blog/cash-vs-accrual-accounting.html">
+        <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
+          <rect width="400" height="150" fill="#C99B5F"/>
+          <path d="M0 150 C100 112 220 136 400 92 L400 150 Z" fill="#EDE3D2" opacity=".5"/>
+          <g stroke="#1E2B4F" stroke-width="3" stroke-linecap="round">
+            <line x1="70" y1="120" x2="70" y2="82"/><line x1="130" y1="120" x2="130" y2="64"/>
+            <line x1="190" y1="120" x2="190" y2="94"/><line x1="250" y1="120" x2="250" y2="50"/>
+            <line x1="310" y1="120" x2="310" y2="72"/>
+          </g>
+          <line x1="40" y1="120" x2="360" y2="120" stroke="#FAF7F1" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="post-body">
+          <span class="cat">GAAP Accounting</span>
+          <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
+          <span class="read">Read article &rarr;</span>
+        </span>
+      </a>
+    </div>
+    <a class="btn btn-sand reveal" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
+  </div>
+</section>"""
+
 # ---------------- HOME ----------------
 pages["index.html"] = dict(
+    cta_html=home_cta,
     title="Outsourced Accounting & Bookkeeping Services | Sandhill HQ",
     desc="Outsourced accounting for SaaS startups and growing businesses. Expert bookkeeping, GAAP financial reporting, ASC 606 revenue recognition, and controller services.",
     active="",
@@ -233,26 +275,6 @@ pages["index.html"] = dict(
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Insights &amp; resources</span>
-      <h2>From the Sandhill <em>desk</em></h2>
-    </div>
-    <div class="posts">
-      <a class="post reveal" href="blog/asc-606-saas-revenue-recognition.html">
-        <span class="cat">GAAP Accounting</span>
-        <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
-        <span class="read">Read article &rarr;</span>
-      </a>
-      <a class="post reveal" href="blog/cash-vs-accrual-accounting.html">
-        <span class="cat">GAAP Accounting</span>
-        <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
-        <span class="read">Read article &rarr;</span>
-      </a>
-    </div>
-  </div>
-</section>
 """)
 
 # ---------------- SERVICES ----------------
@@ -768,7 +790,7 @@ articles = {
 os.makedirs("blog", exist_ok=True)
 for path, p in pages.items():
     with open(path, "w") as f:
-        f.write(shell(p["title"], p["desc"], p["body"], prefix="", active=p["active"]))
+        f.write(shell(p["title"], p["desc"], p["body"], prefix="", active=p["active"], cta_html=p.get("cta_html")))
 for path, p in articles.items():
     with open(path, "w") as f:
         f.write(shell(p["title"], p["desc"], p["body"], prefix="../", active=p["active"]))

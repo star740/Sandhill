@@ -161,10 +161,7 @@ assert tools_marker_a in c
 idx = c.index('<section class="section">\n  <div class="wrap">\n    <div class="section-head center reveal">\n      ' + tools_marker_a)
 c = c[:idx] + TESTIMONIALS + '\n' + REEL + '\n' + c[idx:]
 
-# 4) illustrated blog cards
-posts_re = re.compile(r'    <div class="posts">.*?</div>\n', re.S)
-assert posts_re.search(c)
-c = posts_re.sub(POSTS + '\n', c, count=1)
+# 4) illustrated blog cards: now part of the live home page shell; nothing to do
 
 # preview metadata
 c = c.replace('<title>', '<title>PREVIEW - ', 1)
