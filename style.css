@@ -57,6 +57,7 @@ img{max-width:100%;display:block}
   opacity:.22;pointer-events:none;
 }
 .page-hero .wrap,.page-hero .wrap-narrow{position:relative;z-index:1}
+.hero::after{width:330px;height:195px;right:-48px;bottom:-24px}
 @media(max-width:900px){.hero::after,.page-hero::after{width:160px;height:95px;right:-24px}}
 
 /* NAV */
@@ -67,7 +68,7 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{font-family:'Lora',Georgia,serif;font-size:23px;font-weight:600;letter-spacing:-.01em}
-.logo span{color:var(--sand)}
+.logo span{color:#DCC8A0}
 .nav-links{display:flex;gap:34px;font-size:15px;font-weight:500}
 .nav-links a{opacity:.85;transition:opacity .15s}
 .nav-links a:hover,.nav-links a.active{opacity:1}

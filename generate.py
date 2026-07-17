@@ -96,6 +96,99 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 pages = {}
 
+TESTI_REEL = '''
+<!-- TESTIMONIALS (preview - FILLER QUOTES, replace before launch) -->
+<section class="section" id="sh-testi" style="padding:96px 0">
+  <div class="wrap" style="max-width:860px;text-align:center">
+    <span class="eyebrow" style="justify-content:center">What clients say</span>
+    <div id="t-quote" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B;min-height:4.2em;transition:opacity .9s">&ldquo;Filler testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.&rdquo;</div>
+    <div id="t-name" style="margin-top:22px;font-weight:600;color:#1E2B4F;transition:opacity .9s">[Client Name] &middot; Founder, B2B SaaS <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span></div>
+    <div id="t-pips" style="display:flex;gap:10px;justify-content:center;margin-top:30px"></div>
+  </div>
+<script>
+(function(){
+  var quotes=[
+    {q:'\\u201CFiller testimonial: Sandhill took our books from six months behind to closed by the fifth business day. Our Series A diligence was painless.\\u201D',n:'[Client Name] \\u00B7 Founder, B2B SaaS'},
+    {q:'\\u201CFiller testimonial: It\\u2019s like having a controller, a bookkeeper, and an accounting team without making a single hire. Board reporting went from dreaded to done.\\u201D',n:'[Client Name] \\u00B7 CEO, Tech Startup'},
+    {q:'\\u201CFiller testimonial: They implemented ASC 606 revenue recognition properly the first time. Our auditors had zero findings.\\u201D',n:'[Client Name] \\u00B7 COO, SaaS Platform'}
+  ];
+  var qe=document.getElementById('t-quote'),ne=document.getElementById('t-name'),pp=document.getElementById('t-pips');
+  quotes.forEach(function(_,k){var s=document.createElement('span');s.style.cssText='width:26px;height:3px;border-radius:2px;background:'+(k===0?'#C99B5F':'rgba(21,27,43,.15)')+';transition:background .8s';pp.appendChild(s);});
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var i=0;
+  setInterval(function(){
+    i=(i+1)%quotes.length;
+    qe.style.opacity='0';ne.style.opacity='0';
+    setTimeout(function(){
+      qe.innerHTML=quotes[i].q;
+      ne.innerHTML=quotes[i].n+' <span style="font-weight:400;color:rgba(21,27,43,.5)">(placeholder)</span>';
+      qe.style.opacity='1';ne.style.opacity='1';
+      for(var k=0;k<quotes.length;k++)pp.children[k].style.background=(k===i)?'#C99B5F':'rgba(21,27,43,.15)';
+    },900);
+  },7500);
+})();
+</script>
+</section>
+
+
+<!-- PROOF REEL (preview) -->
+<section class="strip">
+<div id="sh-v2" style="width:100%;max-width:1100px;margin:0 auto;text-align:center;padding:10px 24px;">
+  <div style="font-size:12px;letter-spacing:3px;color:#C99B5F;margin-bottom:26px;font-weight:600;">WHAT WORKING WITH SANDHILL LOOKS LIKE</div>
+  <div id="v2-num" style="font-family:'Lora',Georgia,serif;font-size:clamp(64px,10vw,120px);font-weight:600;color:#FAF7F1;line-height:1;transition:opacity 1.1s;">Day 5</div>
+  <div id="v2-label" style="font-family:'Lora',Georgia,serif;font-style:italic;font-size:clamp(18px,2.4vw,26px);color:#C99B5F;margin-top:18px;transition:opacity 1.1s;">your books, closed and delivered</div>
+  <div id="v2-pips" style="display:flex;gap:10px;justify-content:center;margin-top:34px;"></div>
+</div>
+<script>
+(function () {
+  var slides = [
+    { n: 'Day 5', l: 'your books, closed and delivered', c: null },
+    { n: '100%', l: 'filings on time, every time', c: 100, f: function (v) { return v + '%'; } },
+    { n: '$48M', l: 'in client revenue managed', c: 48, f: function (v) { return '$' + v + 'M'; } },
+    { n: '1', l: 'clear report a founder can actually read', c: null }
+  ];
+  var HOLD_MS = 6000;
+  var num = document.getElementById('v2-num');
+  var label = document.getElementById('v2-label');
+  var pips = document.getElementById('v2-pips');
+  slides.forEach(function (_, k) {
+    var s = document.createElement('span');
+    s.style.cssText = 'width:26px;height:3px;border-radius:2px;background:' + (k === 0 ? '#C99B5F' : 'rgba(250,247,241,.25)') + ';transition:background .8s;';
+    pips.appendChild(s);
+  });
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function ease(t) { return 1 - Math.pow(1 - t, 3); }
+  function count(el, target, dur, fmt) {
+    var t0 = performance.now();
+    (function f(now) {
+      var p = Math.min((now - t0) / dur, 1);
+      el.textContent = fmt(Math.round(ease(p) * target));
+      if (p < 1) requestAnimationFrame(f);
+    })(t0);
+  }
+  var i = 0;
+  function show(idx) {
+    num.style.opacity = '0'; label.style.opacity = '0';
+    setTimeout(function () {
+      var s = slides[idx];
+      label.textContent = s.l;
+      num.style.opacity = '1'; label.style.opacity = '1';
+      if (s.c !== null) { count(num, s.c, 2400, s.f); } else { num.textContent = s.n; }
+      for (var k = 0; k < slides.length; k++) pips.children[k].style.background = (k === idx) ? '#C99B5F' : 'rgba(250,247,241,.25)';
+    }, 1100);
+  }
+  var started = false;
+  function start() { if (started) return; started = true; setInterval(function () { i = (i + 1) % slides.length; show(i); }, HOLD_MS); }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { start(); o.disconnect(); } }, { threshold: 0.3 })
+      .observe(document.getElementById('sh-v2'));
+  } else { start(); }
+})();
+</script>
+</section>
+'''
+
+
 home_cta = f"""<section class="cta cta-insights">
   <div class="wrap">
     <span class="eyebrow eyebrow-light reveal">Insights &amp; resources</span>
@@ -249,6 +342,8 @@ pages["index.html"] = dict(
     </div>
   </div>
 </section>
+
+{TESTI_REEL}
 
 <section class="section">
   <div class="wrap">
