@@ -153,7 +153,6 @@ pages["index.html"] = dict(
       <a class="btn btn-ghost" href="services.html">Explore our services</a>
     </div>
   </div>
-  <img class="hero-mark" src="assets/logo-mark.png" alt="" aria-hidden="true">
 </section>
 
 <section class="strip">
@@ -499,7 +498,7 @@ pages["blog.html"] = dict(
   </div>
 </section>
 
-<section class="section" style="padding-top:32px">
+<section class="section services-bg" style="padding-top:64px">
   <div class="wrap">
     <div class="posts">
       <a class="post reveal" href="blog/cash-vs-accrual-accounting.html">

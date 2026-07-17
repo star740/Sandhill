@@ -45,22 +45,19 @@ img{max-width:100%;display:block}
 .btn-sand:hover{filter:brightness(1.05);transform:translateY(-1px)}
 
 /* LOGO MARK */
-.logo{display:inline-flex;align-items:center;gap:9px}
-.logo-mark{width:34px;height:auto;flex:none}
-.hero{position:relative}
+.logo{display:inline-flex;align-items:center}
+.logo-mark{width:34px;height:auto;flex:none;margin-right:9px}
+.hero{position:relative;overflow:hidden}
 .hero .wrap{position:relative;z-index:1}
-.hero-mark{
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-54%);
-  width:min(560px,80vw);opacity:.16;pointer-events:none;z-index:0;
-}
 .page-hero{position:relative;overflow:hidden}
+.hero::after,
 .page-hero::after{
   content:"";position:absolute;right:-40px;bottom:-18px;width:240px;height:142px;
   background:url("assets/logo-mark.png") no-repeat center/contain;
   opacity:.22;pointer-events:none;
 }
 .page-hero .wrap,.page-hero .wrap-narrow{position:relative;z-index:1}
-@media(max-width:900px){.page-hero::after{width:160px;height:95px;right:-24px}}
+@media(max-width:900px){.hero::after,.page-hero::after{width:160px;height:95px;right:-24px}}
 
 /* NAV */
 header{
