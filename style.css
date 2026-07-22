@@ -80,7 +80,7 @@ header{
 .hero{padding:96px 0 72px;position:relative;overflow:hidden}
 .hero h1{font-size:clamp(40px,6vw,72px);max-width:24ch;text-wrap:balance}
 @media(max-width:760px){.br-lg{display:none}}
-.hero p{max-width:72ch;margin:28px 0 36px;font-size:18px;color:rgba(21,27,43,.78);text-wrap:balance}
+.hero p{max-width:none;margin:28px auto 36px;font-size:18px;color:rgba(21,27,43,.78)}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
 
 /* PAGE HERO (inner pages) */
