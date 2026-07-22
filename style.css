@@ -158,9 +158,9 @@ header{
 .rm-cover-card strong{font-family:'Lora',Georgia,serif;font-weight:500;font-size:28px;line-height:1.2}
 .rm-cover-stages{
   font-size:13px;color:rgba(250,247,241,.75);
-  display:grid;grid-template-columns:auto auto;justify-content:start;gap:7px 18px;
-  max-width:170px;
+  display:grid;grid-template-columns:auto auto;justify-content:start;gap:7px 20px;
 }
+.rm-cover-stages > div{white-space:nowrap}
 .rm-cover-stages b{color:var(--sand)}
 .rm-table-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;max-width:900px;margin:0 auto}
 .rm-table{width:100%;border-collapse:collapse;font-size:15px}
