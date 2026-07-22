@@ -646,7 +646,7 @@ pages["roadmap.html"] = dict(
       <div class="rm-cover-card">
         <span>SANDHILL HQ &middot; FINANCE AS A SERVICE</span>
         <strong>The Founder's Finance Roadmap</strong>
-        <div class="rm-cover-stages"><b>01</b> Foundation &middot; <b>02</b> Traction &middot; <b>03</b> Growth &middot; <b>04</b> Scale</div>
+        <div class="rm-cover-stages"><div><b>01</b> Foundation</div><div><b>02</b> Traction</div><div><b>03</b> Growth</div><div><b>04</b> Scale</div></div>
       </div>
     </div>
   </div>
