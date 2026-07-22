@@ -59,14 +59,14 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
         <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4><a class="foot-head" href="/">Company</a></h4>
         <a href="/about">About Us</a>
         <a href="/roadmap">Founder's Roadmap</a>
         <a href="/faq">FAQ</a>
         <a href="/blog">Insights</a>
       </div>
       <div>
-        <h4>Services</h4>
+        <h4><a class="foot-head" href="/services">Services</a></h4>
         <a href="/services#bookkeeping">Bookkeeping &amp; Operations</a>
         <a href="/services#accounting">Accounting &amp; Reporting</a>
         <a href="/services#controller">Controller Services</a>

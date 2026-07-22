@@ -293,6 +293,8 @@ header{
 footer{padding:64px 0 40px;border-top:1px solid var(--line)}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:48px}
 .foot-grid h4{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:rgba(21,27,43,.55);margin-bottom:14px;font-weight:600}
+.foot-grid h4 a.foot-head{display:inline-block;font-size:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;font-weight:inherit;margin-bottom:0;opacity:1;text-decoration:none}
+.foot-grid h4 a.foot-head:hover{color:var(--sand);opacity:1}
 .foot-grid a{display:block;font-size:14.5px;margin-bottom:9px;opacity:.85}
 .foot-grid a:hover{opacity:1}
 .foot-note{font-size:13px;color:rgba(21,27,43,.55);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-top:26px}
