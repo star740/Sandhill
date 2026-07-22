@@ -25,22 +25,22 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="64x64" href="{prefix}assets/favicon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="{prefix}assets/favicon-192.png">
-<link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
-<link rel="stylesheet" href="{prefix}style.css?v={V}">
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/style.css?v={V}">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="{prefix}index.html"><img class="logo-mark" src="{prefix}assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
+    <a class="logo" href="/"><img class="logo-mark" src="/assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
     <nav class="nav-links" id="navLinks">
-      <a href="{prefix}index.html"{cls('home')}>Home</a>
-      <a href="{prefix}services.html"{cls('services')}>Services</a>
-      <a href="{prefix}roadmap.html"{cls('roadmap')}>Roadmap</a>
-      <a href="{prefix}about.html"{cls('about')}>About Us</a>
-      <a href="{prefix}blog.html"{cls('blog')}>Insights</a>
+      <a href="/"{cls('home')}>Home</a>
+      <a href="/services"{cls('services')}>Services</a>
+      <a href="/roadmap"{cls('roadmap')}>Roadmap</a>
+      <a href="/about"{cls('about')}>About Us</a>
+      <a href="/blog"{cls('blog')}>Insights</a>
     </nav>
     <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
@@ -55,32 +55,32 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="{prefix}index.html"><img class="logo-mark" src="{prefix}assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
+        <a class="logo" href="/"><img class="logo-mark" src="/assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
         <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
         <h4>Company</h4>
-        <a href="{prefix}about.html">About Us</a>
-        <a href="{prefix}roadmap.html">Founder's Roadmap</a>
-        <a href="{prefix}faq.html">FAQ</a>
-        <a href="{prefix}blog.html">Insights</a>
+        <a href="/about">About Us</a>
+        <a href="/roadmap">Founder's Roadmap</a>
+        <a href="/faq">FAQ</a>
+        <a href="/blog">Insights</a>
       </div>
       <div>
         <h4>Services</h4>
-        <a href="{prefix}services.html#bookkeeping">Bookkeeping &amp; Operations</a>
-        <a href="{prefix}services.html#accounting">Accounting &amp; Reporting</a>
-        <a href="{prefix}services.html#controller">Controller Services</a>
+        <a href="/services#bookkeeping">Bookkeeping &amp; Operations</a>
+        <a href="/services#accounting">Accounting &amp; Reporting</a>
+        <a href="/services#controller">Controller Services</a>
       </div>
       <div>
         <h4>Contact</h4>
         <a href="{CAL}" target="_blank" rel="noopener">Book a call</a>
         <a href="mailto:info@sandhillhq.com">info@sandhillhq.com</a>
-        <a href="{prefix}contact.html">Contact us</a>
+        <a href="/contact">Contact us</a>
       </div>
     </div>
     <div class="foot-note">
       <span>&copy; 2026 Sandhill HQ. All rights reserved.</span>
-      <span><a href="{prefix}legal.html">Legal</a></span>
+      <span><a href="/legal">Legal</a></span>
     </div>
   </div>
 </footer>
@@ -171,7 +171,7 @@ home_cta = f"""<section class="cta cta-insights">
     <span class="eyebrow eyebrow-light reveal">Insights &amp; resources</span>
     <h2 class="reveal">From the Sandhill <em>desk</em></h2>
     <div class="posts posts-light">
-      <a class="post post-white reveal" href="blog/asc-606-saas-revenue-recognition.html">
+      <a class="post post-white reveal" href="/blog/asc-606-saas-revenue-recognition">
         <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
           <rect width="400" height="150" fill="#EDE3D2"/>
           <path d="M0 150 C80 100 160 128 240 92 C300 66 360 84 400 56 L400 150 Z" fill="#C99B5F" opacity=".45"/>
@@ -184,7 +184,7 @@ home_cta = f"""<section class="cta cta-insights">
           <span class="read">Read article &rarr;</span>
         </span>
       </a>
-      <a class="post post-white reveal" href="blog/cash-vs-accrual-accounting.html">
+      <a class="post post-white reveal" href="/blog/cash-vs-accrual-accounting">
         <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
           <rect width="400" height="150" fill="#C99B5F"/>
           <path d="M0 150 C100 112 220 136 400 92 L400 150 Z" fill="#EDE3D2" opacity=".5"/>
@@ -220,7 +220,7 @@ pages["index.html"] = dict(
     <p>From bookkeeping and monthly close to compliance, investor reporting, and strategic guidance, we become your complete finance team.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="{CAL}" target="_blank" rel="noopener">Schedule a call</a>
-      <a class="btn btn-ghost" href="services.html">Explore our services</a>
+      <a class="btn btn-ghost" href="/services">Explore our services</a>
     </div>
   </div>
 </section>
@@ -329,17 +329,17 @@ pages["index.html"] = dict(
       <h2>Certified <em>experts</em> in the finance tools that power modern businesses</h2>
     </div>
     <div class="tools-grid reveal">
-      <div class="tool"><img src="assets/logos/quickbooks.svg" alt="QuickBooks logo" loading="lazy"><small>QuickBooks</small></div>
+      <div class="tool"><img src="/assets/logos/quickbooks.svg" alt="QuickBooks logo" loading="lazy"><small>QuickBooks</small></div>
       <div class="tool"><span class="wordmark">NetSuite</span><small>Oracle NetSuite</small></div>
-      <div class="tool"><img src="assets/logos/xero.svg" alt="Xero logo" loading="lazy"><small>Xero</small></div>
-      <div class="tool"><img src="assets/logos/sage.svg" alt="Sage logo" loading="lazy"><small>Sage Intacct</small></div>
-      <div class="tool"><img src="assets/logos/brex.svg" alt="Brex logo" loading="lazy"><small>Brex</small></div>
+      <div class="tool"><img src="/assets/logos/xero.svg" alt="Xero logo" loading="lazy"><small>Xero</small></div>
+      <div class="tool"><img src="/assets/logos/sage.svg" alt="Sage logo" loading="lazy"><small>Sage Intacct</small></div>
+      <div class="tool"><img src="/assets/logos/brex.svg" alt="Brex logo" loading="lazy"><small>Brex</small></div>
       <div class="tool"><span class="wordmark">ramp</span><small>Ramp</small></div>
       <div class="tool"><span class="wordmark">BILL</span><small>BILL</small></div>
-      <div class="tool"><img src="assets/logos/gusto.svg" alt="Gusto logo" loading="lazy"><small>Gusto</small></div>
-      <div class="tool"><img src="assets/logos/zoho.svg" alt="Zoho logo" loading="lazy"><small>Zoho</small></div>
-      <div class="tool"><img src="assets/logos/expensify.svg" alt="Expensify logo" loading="lazy"><small>Expensify</small></div>
-      <div class="tool"><img src="assets/logos/adp.svg" alt="ADP logo" loading="lazy"><small>ADP</small></div>
+      <div class="tool"><img src="/assets/logos/gusto.svg" alt="Gusto logo" loading="lazy"><small>Gusto</small></div>
+      <div class="tool"><img src="/assets/logos/zoho.svg" alt="Zoho logo" loading="lazy"><small>Zoho</small></div>
+      <div class="tool"><img src="/assets/logos/expensify.svg" alt="Expensify logo" loading="lazy"><small>Expensify</small></div>
+      <div class="tool"><img src="/assets/logos/adp.svg" alt="ADP logo" loading="lazy"><small>ADP</small></div>
       <div class="tool"><span class="wordmark">TriNet</span><small>TriNet</small></div>
     </div>
   </div>
@@ -360,7 +360,7 @@ pages["services.html"] = dict(
       <h1>Finance as a <em>Service</em></h1>
       <p>Three layers of support that work together as one finance function, from daily transactions to controller-level oversight. Engage the full stack or just the layer you need today, and scale as you grow.</p>
     </div>
-    <img src="assets/dashboard-1.jpg" alt="Financial dashboard with cash flow, revenue, and reporting on a laptop beside a Sandhill notebook" width="1400" height="1051" loading="eager">
+    <img src="/assets/dashboard-1.jpg" alt="Financial dashboard with cash flow, revenue, and reporting on a laptop beside a Sandhill notebook" width="1400" height="1051" loading="eager">
   </div>
 </section>
 
@@ -525,7 +525,7 @@ pages["about.html"] = dict(
       <p class="reveal" style="max-width:60ch;margin-top:24px;color:rgba(21,27,43,.75)">Our team brings specialized expertise to every layer of the accounting function, from day-to-day bookkeeping to controller-level oversight.</p>
     </div>
     <figure class="team-photo team-photo-side reveal">
-      <img src="assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="854" loading="lazy">
+      <img src="/assets/team.jpg" alt="The Sandhill HQ team of three accounting professionals" width="1000" height="854" loading="lazy">
       <figcaption>The Sandhill HQ Team</figcaption>
     </figure>
   </div>
@@ -539,7 +539,7 @@ pages["about.html"] = dict(
     </div>
     <div class="founder-grid">
     <figure class="team-photo founder-photo reveal">
-      <img src="assets/founder.jpg" alt="Star, Founder and Outsourced Controller of Sandhill HQ" width="800" height="1200" loading="lazy">
+      <img src="/assets/founder.jpg" alt="Star, Founder and Outsourced Controller of Sandhill HQ" width="800" height="1200" loading="lazy">
       <figcaption>Star, Founder &amp; Outsourced Controller</figcaption>
     </figure>
     <div class="founder reveal">
@@ -566,20 +566,20 @@ pages["blog.html"] = dict(
       <h1>From the Sandhill <em>desk</em></h1>
       <p>Practical accounting and finance guidance for founders, written from the trenches, not the textbook.</p>
     </div>
-    <img src="assets/dashboard-2.jpg" alt="Financial performance dashboard with revenue and profit charts on a laptop" width="1400" height="1050" loading="eager">
+    <img src="/assets/dashboard-2.jpg" alt="Financial performance dashboard with revenue and profit charts on a laptop" width="1400" height="1050" loading="eager">
   </div>
 </section>
 
 <section class="section services-bg" style="padding-top:64px">
   <div class="wrap">
     <div class="posts">
-      <a class="post reveal" href="blog/cash-vs-accrual-accounting.html">
+      <a class="post reveal" href="/blog/cash-vs-accrual-accounting">
         <span class="cat">GAAP Accounting</span>
         <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
         <span class="date">June 22, 2026</span>
         <span class="read">Read article &rarr;</span>
       </a>
-      <a class="post reveal" href="blog/asc-606-saas-revenue-recognition.html">
+      <a class="post reveal" href="/blog/asc-606-saas-revenue-recognition">
         <span class="cat">GAAP Accounting</span>
         <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
         <span class="date">February 10, 2026</span>
@@ -638,7 +638,7 @@ pages["roadmap.html"] = dict(
           <button id="rmBtn" class="btn btn-primary" type="submit">Get the roadmap (PDF)</button>
         </form>
         <p class="rm-gate-note" id="rmGateNote">Enter your email and the download starts instantly.</p>
-        <div id="rmDone" hidden><p class="rm-gate-done">Your download is starting. <a href="assets/sandhill-founders-finance-roadmap.pdf" download>Click here</a> if it doesn't.</p></div>
+        <div id="rmDone" hidden><p class="rm-gate-done">Your download is starting. <a href="/assets/sandhill-founders-finance-roadmap.pdf" download>Click here</a> if it doesn't.</p></div>
       </div>
 {RM_GATE_JS}
     </div>
@@ -669,7 +669,7 @@ pages["roadmap.html"] = dict(
           <li>Books reconciled monthly, not at tax time</li>
           <li>Runway and burn tracked every month</li>
         </ul>
-        <a class="rm-tie" href="services.html#bookkeeping">Sandhill covers this: Bookkeeping &amp; Operations &rarr;</a>
+        <a class="rm-tie" href="/services#bookkeeping">Sandhill covers this: Bookkeeping &amp; Operations &rarr;</a>
       </div>
       <div class="pillar reveal">
         <div class="tag">02 &middot; Traction &middot; Early revenue to $1M ARR</div>
@@ -681,7 +681,7 @@ pages["roadmap.html"] = dict(
           <li>Deferred revenue tracked, not lumped into income</li>
           <li>Baseline unit economics: gross margin and CAC</li>
         </ul>
-        <a class="rm-tie" href="services.html#accounting">Sandhill covers this: Accounting &amp; Reporting &rarr;</a>
+        <a class="rm-tie" href="/services#accounting">Sandhill covers this: Accounting &amp; Reporting &rarr;</a>
       </div>
       <div class="pillar reveal">
         <div class="tag">03 &middot; Growth &middot; $1M to $5M ARR</div>
@@ -693,7 +693,7 @@ pages["roadmap.html"] = dict(
           <li>SaaS metrics: NRR, churn, burn multiple, LTV:CAC</li>
           <li>A documented month-end close process</li>
         </ul>
-        <a class="rm-tie" href="services.html#accounting">Sandhill covers this: Accounting &amp; Controller support &rarr;</a>
+        <a class="rm-tie" href="/services#accounting">Sandhill covers this: Accounting &amp; Controller support &rarr;</a>
       </div>
       <div class="pillar reveal">
         <div class="tag">04 &middot; Scale &middot; $5M+ or raising capital</div>
@@ -705,7 +705,7 @@ pages["roadmap.html"] = dict(
           <li>Forecasting and scenario modeling</li>
           <li>Data room prepared for due diligence</li>
         </ul>
-        <a class="rm-tie" href="services.html#controller">Sandhill covers this: Controller Services &rarr;</a>
+        <a class="rm-tie" href="/services#controller">Sandhill covers this: Controller Services &rarr;</a>
       </div>
     </div>
   </div>
@@ -802,7 +802,7 @@ pages["legal.html"] = dict(
     <h2>Privacy</h2>
     <p>This website does not use tracking cookies and does not collect personal information unless you choose to contact us. Information you share with us in the course of an inquiry or engagement is kept confidential and is never sold to third parties.</p>
     <h2>Contact</h2>
-    <p>Questions about these terms? <a href="contact.html" style="text-decoration:underline">Contact us</a>.</p>
+    <p>Questions about these terms? <a href="/contact" style="text-decoration:underline">Contact us</a>.</p>
   </div>
 </section>
 """)
@@ -906,7 +906,7 @@ ASC = """
 
     <h2 style="margin-top:64px">Read more</h2>
     <div class="posts">
-      <a class="post" href="cash-vs-accrual-accounting.html">
+      <a class="post" href="/blog/cash-vs-accrual-accounting">
         <span class="cat">GAAP Accounting</span>
         <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
         <span class="read">Read article &rarr;</span>
@@ -993,7 +993,7 @@ CVA = """
 
     <h2 style="margin-top:64px">Read more</h2>
     <div class="posts">
-      <a class="post" href="asc-606-saas-revenue-recognition.html">
+      <a class="post" href="/blog/asc-606-saas-revenue-recognition">
         <span class="cat">GAAP Accounting</span>
         <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
         <span class="read">Read article &rarr;</span>
@@ -1014,11 +1014,26 @@ articles = {
         active="blog", body=CVA),
 }
 
-os.makedirs("blog", exist_ok=True)
-for path, p in pages.items():
+def out_path(name):
+    """Map a logical page name to its clean-URL output path.
+
+    index.html and 404.html stay at the root (404 must be root-level for
+    GitHub Pages to serve it). Everything else becomes <slug>/index.html so
+    it is served at /<slug> with no .html extension.
+    """
+    if name in ("index.html", "404.html"):
+        return name
+    slug = name[:-5] if name.endswith(".html") else name
+    return os.path.join(slug, "index.html")
+
+for name, p in pages.items():
+    path = out_path(name)
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w") as f:
         f.write(shell(p["title"], p["desc"], p["body"], prefix="", active=p["active"], cta_html=p.get("cta_html")))
-for path, p in articles.items():
+for name, p in articles.items():
+    path = out_path(name)
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
     with open(path, "w") as f:
-        f.write(shell(p["title"], p["desc"], p["body"], prefix="../", active=p["active"]))
-print("Generated:", ", ".join(list(pages) + list(articles)))
+        f.write(shell(p["title"], p["desc"], p["body"], prefix="", active=p["active"]))
+print("Generated:", ", ".join(out_path(n) for n in list(pages) + list(articles)))
