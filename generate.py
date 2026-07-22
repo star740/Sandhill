@@ -2,7 +2,7 @@
 import time
 VERSION = str(int(time.time()))
 """Generates all Sandhill HQ pages with a shared shell. Run from repo root."""
-import os, time
+import os, time, datetime
 V = str(int(time.time()))
 
 CAL = "https://calendar.app.google/ngdhcYuakQkRgjyx5"
@@ -1037,3 +1037,37 @@ for name, p in articles.items():
     with open(path, "w") as f:
         f.write(shell(p["title"], p["desc"], p["body"], prefix="", active=p["active"]))
 print("Generated:", ", ".join(out_path(n) for n in list(pages) + list(articles)))
+
+# ---------------- SITEMAP ----------------
+# Built from the same page list above, so adding a page updates the sitemap
+# automatically. 404 is excluded; it should never be indexed.
+SITE = "https://sandhillhq.com"
+
+def url_for(name):
+    if name == "index.html":
+        return SITE + "/"
+    slug = name[:-5] if name.endswith(".html") else name
+    return f"{SITE}/{slug}"
+
+today = datetime.date.today().isoformat()
+entries = []
+for name in list(pages) + list(articles):
+    if name == "404.html":
+        continue
+    priority = "1.0" if name == "index.html" else "0.8"
+    entries.append(
+        f"  <url>\n"
+        f"    <loc>{url_for(name)}</loc>\n"
+        f"    <lastmod>{today}</lastmod>\n"
+        f"    <priority>{priority}</priority>\n"
+        f"  </url>"
+    )
+
+with open("sitemap.xml", "w") as f:
+    f.write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "\n".join(entries)
+        + "\n</urlset>\n"
+    )
+print(f"Sitemap: {len(entries)} URLs")
