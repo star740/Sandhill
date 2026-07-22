@@ -68,7 +68,7 @@ header{
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{font-family:'Lora',Georgia,serif;font-size:23px;font-weight:600;letter-spacing:-.01em}
-.logo span{color:#C9AF7E}
+.logo span{color:#C9AF7E;margin-left:2.5px}
 .nav-links{display:flex;gap:34px;font-size:15px;font-weight:500}
 .nav-links a{opacity:.85;transition:opacity .15s}
 .nav-links a:hover,.nav-links a.active{opacity:1}

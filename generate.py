@@ -34,7 +34,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="/"><img class="logo-mark" src="/assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
+    <a class="logo" href="/">Sandhill<span>HQ</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="/"{cls('home')}>Home</a>
       <a href="/services"{cls('services')}>Services</a>
@@ -55,7 +55,7 @@ def shell(title, desc, body, prefix="", active="", cta_html=None):
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="/"><img class="logo-mark" src="/assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>&nbsp;HQ</span></a>
+        <a class="logo" href="/"><img class="logo-mark" src="/assets/logo-mark.png" alt="" aria-hidden="true">Sandhill<span>HQ</span></a>
         <p style="font-size:14px;color:rgba(21,27,43,.6);margin-top:14px;max-width:32ch">Outsourced accounting and finance for SaaS startups and growing businesses.</p>
       </div>
       <div>
