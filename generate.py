@@ -818,7 +818,7 @@ pages["404.html"] = dict(
     <span class="eyebrow" style="justify-content:center">404</span>
     <h1 style="margin:0 auto">This page doesn't <em>reconcile</em></h1>
     <p style="margin:24px auto 36px">The page you're looking for doesn't exist or has moved. Let's get you back on the books.</p>
-    <a class="btn btn-primary" href="/Sandhill/">Back to home</a>
+    <a class="btn btn-primary" href="/">Back to home</a>
   </div>
 </section>
 """)
