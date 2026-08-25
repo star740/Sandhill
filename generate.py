@@ -171,16 +171,21 @@ home_cta = f"""<section class="cta cta-insights">
     <span class="eyebrow eyebrow-light reveal">Insights &amp; resources</span>
     <h2 class="reveal">From the Sandhill <em>desk</em></h2>
     <div class="posts posts-light">
-      <a class="post post-white reveal" href="/blog/asc-606-saas-revenue-recognition">
+      <a class="post post-white reveal" href="/blog/bookings-billings-revenue-arr">
         <svg viewBox="0 0 400 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block" aria-hidden="true">
-          <rect width="400" height="150" fill="#EDE3D2"/>
-          <path d="M0 150 C80 100 160 128 240 92 C300 66 360 84 400 56 L400 150 Z" fill="#C99B5F" opacity=".45"/>
-          <path d="M40 105 L110 70 L180 88 L260 45 L330 60 L385 28" stroke="#1E2B4F" stroke-width="3" fill="none" stroke-linecap="round"/>
-          <circle cx="385" cy="28" r="5" fill="#1E2B4F"/>
+          <rect width="400" height="150" fill="#1E2B4F"/>
+          <path d="M0 150 C90 118 210 138 400 104 L400 150 Z" fill="#EDE3D2" opacity=".14"/>
+          <g fill="#C99B5F">
+            <rect x="56" y="48" width="44" height="74" rx="3"/>
+            <rect x="138" y="48" width="44" height="74" rx="3"/>
+            <rect x="220" y="48" width="44" height="74" rx="3"/>
+          </g>
+          <rect x="302" y="106" width="44" height="16" rx="3" fill="#EDE3D2"/>
+          <line x1="40" y1="122" x2="362" y2="122" stroke="#EDE3D2" stroke-width="3" stroke-linecap="round" opacity=".7"/>
         </svg>
         <span class="post-body">
-          <span class="cat">GAAP Accounting</span>
-          <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
+          <span class="cat">SaaS Metrics</span>
+          <h3>Bookings vs. Billings vs. Revenue vs. ARR: What Founders Need to Know</h3>
           <span class="read">Read article &rarr;</span>
         </span>
       </a>
@@ -573,6 +578,12 @@ pages["blog.html"] = dict(
 <section class="section services-bg" style="padding-top:64px">
   <div class="wrap">
     <div class="posts">
+      <a class="post reveal" href="/blog/bookings-billings-revenue-arr">
+        <span class="cat">SaaS Metrics</span>
+        <h3>Bookings vs. Billings vs. Revenue vs. ARR: What Founders Need to Know</h3>
+        <span class="date">August 21, 2026</span>
+        <span class="read">Read article &rarr;</span>
+      </a>
       <a class="post reveal" href="/blog/cash-vs-accrual-accounting">
         <span class="cat">GAAP Accounting</span>
         <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
@@ -911,6 +922,11 @@ ASC = """
         <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
         <span class="read">Read article &rarr;</span>
       </a>
+      <a class="post" href="/blog/bookings-billings-revenue-arr">
+        <span class="cat">SaaS Metrics</span>
+        <h3>Bookings vs. Billings vs. Revenue vs. ARR: What Founders Need to Know</h3>
+        <span class="read">Read article &rarr;</span>
+      </a>
     </div>
   </div>
 </article>
@@ -998,12 +1014,163 @@ CVA = """
         <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
         <span class="read">Read article &rarr;</span>
       </a>
+      <a class="post" href="/blog/bookings-billings-revenue-arr">
+        <span class="cat">SaaS Metrics</span>
+        <h3>Bookings vs. Billings vs. Revenue vs. ARR: What Founders Need to Know</h3>
+        <span class="read">Read article &rarr;</span>
+      </a>
+    </div>
+  </div>
+</article>
+"""
+
+# ---------------- ARTICLE: BOOKINGS VS BILLINGS VS REVENUE VS ARR ----------------
+BBR = """
+<div class="article-head">
+  <div class="wrap-narrow">
+    <span class="cat">SaaS Metrics</span>
+    <h1>Bookings vs. Billings vs. Revenue vs. ARR: What Founders Need to Know</h1>
+    <div class="date">August 21, 2026 &middot; Sandhill HQ</div>
+  </div>
+</div>
+<article class="article">
+  <div class="wrap-narrow">
+    <p class="lead">You close a $150,000 annual SaaS contract.</p>
+    <p>Your sales team celebrates $150,000 in bookings. Your invoice shows $150,000 in billings. Your ARR goes up by $150,000. But your income statement may only show $12,500 of revenue in the first month.</p>
+    <p>Same customer. Same contract. Four different numbers.</p>
+    <p>For SaaS founders, understanding the difference between <strong>bookings, billings, revenue, and ARR</strong> becomes increasingly important as the company grows. These metrics are related, but they measure different parts of your business.</p>
+    <p>Mix them up, and you can walk away with the wrong idea about your growth, cash flow, or financial performance.</p>
+    <p>Here's what founders need to know.</p>
+
+    <h2>What Are Bookings?</h2>
+    <p>Bookings represent the value of contracts customers have committed to during a period.</p>
+    <p>Think of bookings as <strong>what your customers signed up for</strong>.</p>
+    <p>Say you sign a new customer to a two-year contract worth $100,000 per year. The total contract value is $200,000.</p>
+    <p>Depending on how your company defines bookings, you may report $200,000 when the contract is signed.</p>
+    <p>But that doesn't mean you've collected $200,000 in cash or earned $200,000 in revenue. You simply have a signed commitment from the customer.</p>
+    <p>Bookings are useful for understanding sales performance and future business, but they aren't an accounting measure that appears on your income statement.</p>
+
+    <h2>What Are Billings?</h2>
+    <p>Billings represent the amounts you've invoiced your customers.</p>
+    <p>Think of billings as <strong>what you've asked the customer to pay</strong>.</p>
+    <p>Let's go back to that $200,000 two-year contract.</p>
+    <p>If you invoice $100,000 at the beginning of each year, your bookings may be $200,000, but your initial billing is only $100,000.</p>
+    <p>If you invoice the entire contract upfront, your billings could be $200,000 immediately.</p>
+    <p>Same contract. Different billing terms.</p>
+    <p>Billings help you understand how much you're invoicing customers and when you expect cash to arrive.</p>
+    <p>But <strong>billings are not the same as revenue.</strong></p>
+
+    <h2>What Is Revenue?</h2>
+    <p>Revenue represents the amount your company has earned by providing its product or service.</p>
+    <p>For SaaS companies, that typically means recognizing subscription revenue over the period the service is provided.</p>
+    <p>Say a customer signs a $150,000 annual contract on January 1 and pays the entire amount upfront.</p>
+    <p>You might have:</p>
+    <ul>
+      <li><strong>Bookings:</strong> $150,000</li>
+      <li><strong>Billings:</strong> $150,000</li>
+      <li><strong>Cash collected:</strong> $150,000</li>
+      <li><strong>January revenue:</strong> $12,500</li>
+    </ul>
+    <p>Why only $12,500 of revenue?</p>
+    <p>Because you've only provided one month of a 12-month service.</p>
+    <p>Assuming straight-line recognition is appropriate, you'll recognize $12,500 each month until the full $150,000 has been recognized.</p>
+    <p>The cash may already be in your bank account, but that doesn't mean you've earned all of it yet.</p>
+
+    <h2>What Is ARR?</h2>
+    <p>ARR stands for <strong>Annual Recurring Revenue</strong>.</p>
+    <p>Unlike revenue, ARR is not a GAAP accounting measure. It's an operating metric used to understand the annualized value of your recurring subscription business.</p>
+    <p>If a customer signs a recurring SaaS subscription worth $10,000 per month, that customer represents $120,000 of ARR.</p>
+    <p>ARR helps founders and investors understand the size and growth of the recurring customer base.</p>
+    <p>But it doesn't tell you how much cash you've collected or how much revenue you've recognized.</p>
+    <p>One customer could represent $120,000 of ARR while paying monthly. Another could represent the same $120,000 of ARR while paying the entire year upfront.</p>
+    <p>Same ARR. Very different cash flow.</p>
+
+    <h2>One Contract, Four Different Numbers</h2>
+    <p>Let's put it all together.</p>
+    <p>Imagine you sign a customer on January 1 for a <strong>$150,000 annual subscription</strong>, paid upfront.</p>
+    <div class="rm-table-wrap">
+      <table class="rm-table">
+        <thead>
+          <tr><th>Metric</th><th>Amount</th><th>What It Tells You</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Bookings</td><td>$150,000</td><td>Value of the contract signed</td></tr>
+          <tr><td>Billings</td><td>$150,000</td><td>Amount invoiced</td></tr>
+          <tr><td>ARR</td><td>$150,000</td><td>Annualized recurring value</td></tr>
+          <tr><td>January Revenue</td><td>$12,500</td><td>Amount earned during January</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:24px">All four numbers can be correct at the same time.</p>
+    <p>They simply answer different questions.</p>
+    <ul>
+      <li><strong>Bookings:</strong> What did customers commit to?</li>
+      <li><strong>Billings:</strong> What did we invoice?</li>
+      <li><strong>Revenue:</strong> What did we earn?</li>
+      <li><strong>ARR:</strong> What is the annualized value of our recurring business?</li>
+    </ul>
+    <p>Once you separate these concepts, SaaS financial reporting becomes much easier to understand.</p>
+
+    <h2>Where Founders Get Into Trouble</h2>
+    <p>Problems usually start when these terms are used interchangeably.</p>
+    <p>Imagine your sales team closes $1 million of contracts in December.</p>
+    <p>That's great news.</p>
+    <p>But saying, "We generated $1 million of revenue in December" could be misleading.</p>
+    <p>Those contracts may cover the next 12, 24, or 36 months. Some customers may be invoiced upfront, while others are billed quarterly or monthly.</p>
+    <p>Your bookings might increase by $1 million while your recognized December revenue increases by only a fraction of that amount.</p>
+    <p>Neither number is wrong. They're simply measuring different things.</p>
+
+    <h2>Why the Difference Matters</h2>
+    <p>Understanding these metrics becomes increasingly important as your SaaS company scales.</p>
+    <ul>
+      <li><strong>Forecasting:</strong> Bookings provide visibility into future business. Billings help you understand expected cash collections. Revenue shows what you're earning over time. ARR tracks the size of your recurring business.</li>
+      <li><strong>Cash flow:</strong> Two SaaS companies can have identical ARR and very different cash positions. A company collecting annual subscriptions upfront may have significantly more cash than one billing customers monthly.</li>
+      <li><strong>Fundraising:</strong> Investors will often ask about ARR growth, bookings, revenue, and cash. You should be able to clearly explain how those numbers relate to each other.</li>
+    </ul>
+    <p>If they don't reconcile, investors are likely to start asking more questions.</p>
+
+    <h2>Make Sure Everyone Uses the Same Definitions</h2>
+    <p>One of the simplest things a growing SaaS company can do is define these metrics internally.</p>
+    <p>Your CEO, sales team, finance team, and board should mean the same thing when they say "bookings" or "ARR."</p>
+    <p>For example, does your company count the full value of a multi-year contract as bookings or only the first year? Do implementation fees count toward ARR? How do you handle usage-based fees?</p>
+    <p>There isn't always one universal definition for every SaaS operating metric. What's important is having a clear methodology and applying it consistently.</p>
+    <p>Your numbers should also tie back to your contracts, invoices, and accounting records.</p>
+
+    <h2>The Bottom Line</h2>
+    <p>Bookings, billings, revenue, and ARR are related, but they aren't interchangeable.</p>
+    <p>A simple way to remember the difference is:</p>
+    <ul>
+      <li><strong>Bookings tell you what customers committed to.</strong></li>
+      <li><strong>Billings tell you what you've invoiced.</strong></li>
+      <li><strong>Revenue tells you what you've earned.</strong></li>
+      <li><strong>ARR tells you the annualized value of your recurring business.</strong></li>
+    </ul>
+    <p>Understanding the difference gives you a clearer view of sales performance, cash flow, growth, and the overall health of your SaaS company.</p>
+    <p>And as you prepare for a fundraise, audit, or acquisition, having these numbers clearly defined and properly reconciled becomes even more important.</p>
+    <div class="outro">At Sandhill, we help SaaS companies build accounting and finance functions that scale, from accurate monthly reporting and revenue recognition to investor-ready financials.</div>
+
+    <h2 style="margin-top:64px">Read more</h2>
+    <div class="posts">
+      <a class="post" href="/blog/cash-vs-accrual-accounting">
+        <span class="cat">GAAP Accounting</span>
+        <h3>Cash vs. Accrual Accounting: Why the Switch Hurts and How to Get Ahead of It</h3>
+        <span class="read">Read article &rarr;</span>
+      </a>
+      <a class="post" href="/blog/asc-606-saas-revenue-recognition">
+        <span class="cat">GAAP Accounting</span>
+        <h3>ASC 606 and SaaS: What Startup Founders Actually Need to Know about Recognizing Revenue</h3>
+        <span class="read">Read article &rarr;</span>
+      </a>
     </div>
   </div>
 </article>
 """
 
 articles = {
+    "blog/bookings-billings-revenue-arr.html": dict(
+        title="Bookings vs. Billings vs. Revenue vs. ARR | Sandhill HQ",
+        desc="Same contract, four different numbers. What bookings, billings, revenue, and ARR each measure, and why SaaS founders need to keep them straight.",
+        active="blog", body=BBR),
     "blog/asc-606-saas-revenue-recognition.html": dict(
         title="ASC 606 and SaaS: What Startup Founders Need to Know | Sandhill HQ",
         desc="Most SaaS founders learn about ASC 606 the hard way. Here's what to know before an auditor, investor, or an acquisition forces the conversation.",
