@@ -278,6 +278,8 @@ header{
 /* HOME CLOSING INSIGHTS */
 .cta-insights{padding:96px 24px;text-align:center}
 .cta-insights h2{margin:0 auto 40px}
+.eyebrow-center{justify-content:center}
+.eyebrow-center::after{content:"";width:26px;height:1px;background:var(--sand)}
 .eyebrow-light{color:var(--sand)}
 .eyebrow-light::before{background:var(--sand)}
 .cta-insights .eyebrow{justify-content:center}

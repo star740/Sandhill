@@ -98,70 +98,14 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 pages = {}
 
-TESTI_REEL = '''
+TESTIMONIAL = '''
 <!-- TESTIMONIAL -->
-<section class="section" id="sh-testi" style="padding:96px 0">
-  <div class="wrap" style="max-width:860px;text-align:center">
-    <span class="eyebrow" style="justify-content:center">What clients say</span>
-    <div class="reveal" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B">&ldquo;Sandhill was a fantastic partner - reliable, proactive, and skilled across the board. They supported us with month-end close, reporting, ad hoc projects, financial analysis and much more. The work was accurate and thoughtful, and they adapted quickly to our needs. Highly recommend!&rdquo;</div>
-    <div class="reveal" style="margin-top:22px;font-weight:600;color:#1E2B4F">Anthony &middot; CFO, Technology Company</div>
+<section class="strip" id="sh-testi" style="padding:100px 0">
+  <div class="wrap" style="max-width:900px;text-align:center">
+    <span class="eyebrow eyebrow-light eyebrow-center">What clients say</span>
+    <div class="reveal" style="font-family:'Lora',Georgia,serif;font-size:clamp(23px,3.1vw,34px);line-height:1.45;color:#FAF7F1">&ldquo;Sandhill was a fantastic partner - reliable, proactive, and skilled across the board. They supported us with month-end close, reporting, ad hoc projects, financial analysis and much more. The work was accurate and thoughtful, and they adapted quickly to our needs. Highly recommend!&rdquo;</div>
+    <div class="reveal" style="margin-top:26px;font-weight:600;font-size:15px;letter-spacing:.02em;color:#C99B5F">Anthony &middot; CFO, Technology Company</div>
   </div>
-</section>
-
-<!-- PROOF REEL (preview) -->
-<section class="strip">
-<div id="sh-v2" style="width:100%;max-width:1100px;margin:0 auto;text-align:center;padding:10px 24px;">
-  <div style="font-size:12px;letter-spacing:3px;color:#C99B5F;margin-bottom:26px;font-weight:600;">WHAT WORKING WITH SANDHILL LOOKS LIKE</div>
-  <div id="v2-num" style="font-family:'Lora',Georgia,serif;font-size:clamp(64px,10vw,120px);font-weight:600;color:#FAF7F1;line-height:1;transition:opacity 1.1s;">Day 5</div>
-  <div id="v2-label" style="font-family:'Lora',Georgia,serif;font-style:italic;font-size:clamp(18px,2.4vw,26px);color:#C99B5F;margin-top:18px;transition:opacity 1.1s;">your books, closed and delivered</div>
-  <div id="v2-pips" style="display:flex;gap:10px;justify-content:center;margin-top:34px;"></div>
-</div>
-<script>
-(function () {
-  var slides = [
-    { n: 'Day 5', l: 'your books, closed and delivered', c: null },
-    { n: '100%', l: 'filings on time, every time', c: 100, f: function (v) { return v + '%'; } },
-    { n: '$48M', l: 'in client revenue managed', c: 48, f: function (v) { return '$' + v + 'M'; } },
-    { n: '1', l: 'clear report a founder can actually read', c: null }
-  ];
-  var HOLD_MS = 6000;
-  var num = document.getElementById('v2-num');
-  var label = document.getElementById('v2-label');
-  var pips = document.getElementById('v2-pips');
-  slides.forEach(function (_, k) {
-    var s = document.createElement('span');
-    s.style.cssText = 'width:26px;height:3px;border-radius:2px;background:' + (k === 0 ? '#C99B5F' : 'rgba(250,247,241,.25)') + ';transition:background .8s;';
-    pips.appendChild(s);
-  });
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  function ease(t) { return 1 - Math.pow(1 - t, 3); }
-  function count(el, target, dur, fmt) {
-    var t0 = performance.now();
-    (function f(now) {
-      var p = Math.min((now - t0) / dur, 1);
-      el.textContent = fmt(Math.round(ease(p) * target));
-      if (p < 1) requestAnimationFrame(f);
-    })(t0);
-  }
-  var i = 0;
-  function show(idx) {
-    num.style.opacity = '0'; label.style.opacity = '0';
-    setTimeout(function () {
-      var s = slides[idx];
-      label.textContent = s.l;
-      num.style.opacity = '1'; label.style.opacity = '1';
-      if (s.c !== null) { count(num, s.c, 2400, s.f); } else { num.textContent = s.n; }
-      for (var k = 0; k < slides.length; k++) pips.children[k].style.background = (k === idx) ? '#C99B5F' : 'rgba(250,247,241,.25)';
-    }, 1100);
-  }
-  var started = false;
-  function start() { if (started) return; started = true; setInterval(function () { i = (i + 1) % slides.length; show(i); }, HOLD_MS); }
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { start(); o.disconnect(); } }, { threshold: 0.3 })
-      .observe(document.getElementById('sh-v2'));
-  } else { start(); }
-})();
-</script>
 </section>
 '''
 
@@ -325,7 +269,7 @@ pages["index.html"] = dict(
   </div>
 </section>
 
-{TESTI_REEL}
+{TESTIMONIAL}
 
 <section class="section">
   <div class="wrap">
@@ -1238,3 +1182,44 @@ with open("sitemap.xml", "w") as f:
         + "\n</urlset>\n"
     )
 print(f"Sitemap: {len(entries)} URLs")
+
+# ---------------- TEMP PREVIEW PAGE (noindex, delete after Star picks) ----------------
+PREVIEW_LABEL = ('<div style="background:#151B2B;color:#C99B5F;text-align:center;'
+                 'padding:14px 24px;font-size:12px;letter-spacing:.14em;font-weight:600;'
+                 'text-transform:uppercase">{}</div>')
+
+PREVIEW_BODY = PREVIEW_LABEL.format("Option 1 &middot; live now &middot; testimonial on navy, stats removed") + TESTIMONIAL + PREVIEW_LABEL.format("Option 2 &middot; what you get every month") + '''
+<section class="strip" style="padding:100px 0">
+  <div class="wrap" style="text-align:center">
+    <span class="eyebrow eyebrow-light eyebrow-center">What working with Sandhill looks like</span>
+    <h2 class="reveal" style="max-width:24ch;margin:0 auto 54px">Every month, without <em>chasing</em> anyone</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:34px;text-align:left">
+      <div><div style="width:34px;height:2px;background:#C99B5F;margin-bottom:18px"></div><h3 style="font-size:19px;margin:0 0 10px;color:#FAF7F1">Books closed on schedule</h3><p style="font-size:14.5px;color:rgba(250,247,241,.7);margin:0">Reconciled accounts and a clean general ledger, delivered on a date you can plan around.</p></div>
+      <div><div style="width:34px;height:2px;background:#C99B5F;margin-bottom:18px"></div><h3 style="font-size:19px;margin:0 0 10px;color:#FAF7F1">Statements you can hand over</h3><p style="font-size:14.5px;color:rgba(250,247,241,.7);margin:0">GAAP-ready P&amp;L, balance sheet, and cash flow that hold up in front of a board or an investor.</p></div>
+      <div><div style="width:34px;height:2px;background:#C99B5F;margin-bottom:18px"></div><h3 style="font-size:19px;margin:0 0 10px;color:#FAF7F1">Metrics that mean something</h3><p style="font-size:14.5px;color:rgba(250,247,241,.7);margin:0">ARR, retention, burn, and runway reported consistently, so the trend is the story.</p></div>
+      <div><div style="width:34px;height:2px;background:#C99B5F;margin-bottom:18px"></div><h3 style="font-size:19px;margin:0 0 10px;color:#FAF7F1">A controller on call</h3><p style="font-size:14.5px;color:rgba(250,247,241,.7);margin:0">Someone senior who knows your business and picks up when a question cannot wait.</p></div>
+    </div>
+  </div>
+</section>
+''' + PREVIEW_LABEL.format("Option 3 &middot; single statement line, testimonial stays on paper") + '''
+<section class="section" style="padding:96px 0">
+  <div class="wrap" style="max-width:860px;text-align:center">
+    <span class="eyebrow eyebrow-center">What clients say</span>
+    <div class="reveal" style="font-family:'Lora',Georgia,serif;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#151B2B">&ldquo;Sandhill was a fantastic partner - reliable, proactive, and skilled across the board. They supported us with month-end close, reporting, ad hoc projects, financial analysis and much more. The work was accurate and thoughtful, and they adapted quickly to our needs. Highly recommend!&rdquo;</div>
+    <div class="reveal" style="margin-top:22px;font-weight:600;color:#1E2B4F">Anthony &middot; CFO, Technology Company</div>
+  </div>
+</section>
+<section class="strip">
+  <div class="wrap">
+    <h2 class="reveal strip-c">Your books closed on schedule, your reporting consistent, and someone senior who knows your numbers as well as you do</h2>
+  </div>
+</section>
+'''
+
+_prev = shell("Preview: home testimonial options", "Temporary preview page.",
+              PREVIEW_BODY, prefix="", active="")
+_prev = _prev.replace("<title>", '<meta name="robots" content="noindex, nofollow">\n<title>', 1)
+os.makedirs("preview-options", exist_ok=True)
+with open("preview-options/index.html", "w") as f:
+    f.write(_prev)
+print("Preview: preview-options/index.html (noindex, not in sitemap)")
